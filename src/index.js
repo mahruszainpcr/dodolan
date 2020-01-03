@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Header from './component/Header';
+import Sidebar from './component/Sidebar';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Header />, document.getElementById('header'));
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render( < Header / > , document.getElementById('header'));
+ReactDOM.render( < Sidebar / > , document.getElementById('sidebar'));
+ReactDOM.render( < App / > , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
