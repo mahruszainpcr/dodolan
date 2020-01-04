@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Header from './component/Header';
 import Sidebar from './component/Sidebar';
+import Loading from './component/Loading';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render( < Header / > , document.getElementById('header'));
