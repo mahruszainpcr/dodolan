@@ -172,6 +172,19 @@ return (
                                                             className="required form-control" />
                                                     </div>
                                                 </div>
+                                                <div className="form-group row">
+                                                    <div className="col-md-4 col-lg-2">
+                                                        <label htmlFor="warna" className="block">
+                                                            Warna
+                                                        </label>
+                                                    </div>
+                                                    <div className="col-md-8 col-lg-10">
+                                                        <input id="ukuran" name="ukuran" type="text"
+                                                            className="required form-control" data-control="hue" defaultValue="#ff6161" />
+
+                                                    </div>
+                                                </div>
+                                                
                                             </fieldset>
                                         </form>
 
