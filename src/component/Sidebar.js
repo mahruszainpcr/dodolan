@@ -22,6 +22,11 @@ function Sidebar()  {
                 </a>
               </li>
               <li className=" ">
+              <a href="forminputproduk">
+                  <span className="pcoded-mtext">Input Produk</span>
+                </a>
+              </li>
+              <li className=" ">
               <a href="notfound">
                   <span className="pcoded-mtext">Notfound</span>
                 </a>
