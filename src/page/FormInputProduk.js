@@ -27,8 +27,9 @@ return (
                                                         </label>
                                                     </div>
                                                     <div className="col-md-8 col-lg-10">
+
                                                         <input id="nama_produk" name="nama_produk" type="text"
-                                                            className="required form-control" />
+                                                            className="required form-control  form-control-capitalize" />
                                                     </div>
                                                 </div>
                                                 <div className="form-group row">
@@ -86,7 +87,7 @@ return (
                                                         multiple="multiple" />
                                                 </div>
                                             </fieldset>
-                                            <h3> Education </h3>
+                                            <h3> Data Produk Lanjutan </h3>
                                             <fieldset>
                                                 <div className="form-group row">
                                                     <div className="col-md-4 col-lg-2">
@@ -112,26 +113,32 @@ return (
                                                     <div className="col-md-8 col-lg-10">
                                                         <div className="row">
                                                             <div className="col-md-4 col-lg-4">
-                                                            <select name="kategori" id="kategori"
-                                                            className="required form-control">
-                                                            <option value="Pilih Kategori" className="badge-danger">Pilih Kategori</option>
-                                                            <option value="Bahan Bangunan">Bahan Bangunan</option>
-                                                            <option value="Sepatu">Sepatu</option>
-                                                        </select></div>
-                                                        <div className="col-md-4 col-lg-4">
-                                                            <select name="sub_kategori" id="sub_kategori"
-                                                            className="required form-control">
-                                                            <option value="Pilih Sub Kategori" className="badge-danger">Pilih Sub Kategori</option>
-                                                            <option value="Konstruksi">Konstruksi</option>
-                                                            <option value="Cat">Cat</option>
-                                                        </select></div>
-                                                        <div className="col-md-4 col-lg-4">
-                                                            <select name="sub_sub_kategori" id="sub_sub_kategori"
-                                                            className="required form-control">
-                                                            <option value="Pilih Sub Kategori II" className="badge-danger">Pilih Sub Kategori II</option>
-                                                            <option value="Besi">Besi</option>
-                                                            <option value="Pasir">Pasir</option>
-                                                        </select></div>
+                                                                <select name="kategori" id="kategori"
+                                                                    className="required form-control">
+                                                                    <option value="Pilih Kategori"
+                                                                        className="badge-danger">Pilih Kategori</option>
+                                                                    <option value="Bahan Bangunan">Bahan Bangunan
+                                                                    </option>
+                                                                    <option value="Sepatu">Sepatu</option>
+                                                                </select></div>
+                                                            <div className="col-md-4 col-lg-4">
+                                                                <select name="sub_kategori" id="sub_kategori"
+                                                                    className="required form-control">
+                                                                    <option value="Pilih Sub Kategori"
+                                                                        className="badge-danger">Pilih Sub Kategori
+                                                                    </option>
+                                                                    <option value="Konstruksi">Konstruksi</option>
+                                                                    <option value="Cat">Cat</option>
+                                                                </select></div>
+                                                            <div className="col-md-4 col-lg-4">
+                                                                <select name="sub_sub_kategori" id="sub_sub_kategori"
+                                                                    className="required form-control">
+                                                                    <option value="Pilih Sub Kategori II"
+                                                                        className="badge-danger">Pilih Sub Kategori II
+                                                                    </option>
+                                                                    <option value="Besi">Besi</option>
+                                                                    <option value="Pasir">Pasir</option>
+                                                                </select></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -179,12 +186,15 @@ return (
                                                         </label>
                                                     </div>
                                                     <div className="col-md-8 col-lg-10">
-                                                        <input id="ukuran" name="ukuran" type="text"
-                                                            className="required form-control" data-control="hue" defaultValue="#ff6161" />
+                                                        <input type="text" id="text-field" className="form-control demo"
+                                                            defaultValue="#70c24a" />
+                                                        {/* <input type="text" id="hue-demo"
+                                                            className="form-control demo" data-control="hue"
+                                                            defaultValue="#ff6161" /> */}
 
                                                     </div>
                                                 </div>
-                                                
+
                                             </fieldset>
                                         </form>
 
