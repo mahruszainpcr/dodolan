@@ -12,7 +12,7 @@ return (
                         <h3>Input Produk</h3>
                         <span>Harap mengisi <b>semua</b> form yang telah tertera</span>
                     </div>
-                    <div className="card-block">
+                    <div className="card">
                         <div className="row">
                             <div className="col-md-12">
                                 <div id="wizard">
@@ -32,6 +32,7 @@ return (
                                                             className="required form-control  form-control-capitalize" />
                                                     </div>
                                                 </div>
+                                                
                                                 <div className="form-group row">
                                                     <div className="col-md-4 col-lg-2">
                                                         <label htmlFor="deskripsi" className="block">
@@ -42,7 +43,7 @@ return (
                                                         <textarea name="deskripsi" id="deskripsi" cols="10" rows="3"
                                                             className="form-control required"></textarea>
                                                     </div>
-                                                </div>
+                                                </div>                                              
                                                 <div className="form-group row">
                                                     <div className="col-md-4 col-lg-2">
                                                         <label htmlFor="password-2" className="block">

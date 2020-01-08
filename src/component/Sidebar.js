@@ -33,6 +33,33 @@ function Sidebar()  {
               </li>
             </ul>
           </li>
+          <li className="pcoded-hasmenu">
+            <a href="javascript:void(0)">
+              <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
+              <span className="pcoded-mtext">Kelola Distributor</span>
+            </a>
+            <ul className="pcoded-submenu">
+              <li className>
+                <a href="produkdistributor">
+                  <span className="pcoded-mtext">Lihat Produk</span>
+                </a>
+              </li>
+            </ul>
+            <ul className="pcoded-submenu">
+              <li className>
+                <a href="keloladatadistributor">
+                  <span className="pcoded-mtext">Tambah Data</span>
+                </a>
+              </li>
+            </ul>
+            <ul className="pcoded-submenu">
+              <li className>
+                <a href="penagihanretail">
+                  <span className="pcoded-mtext">Penagihan Retail</span>
+                </a>
+              </li>
+            </ul>
+            </li>
         </ul>  
       </div>
     </nav> 
