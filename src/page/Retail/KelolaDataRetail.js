@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-export default class KelolaDataDistributor extends Component {
+
+export default class KelolaDataRetail extends Component {
     render() {
         return (
             <div>
@@ -11,7 +12,7 @@ export default class KelolaDataDistributor extends Component {
             <div className="col">
                 <div className="card">
                     <div className="card-header">
-                        <h3>Form Pengisian Data Distributor</h3>
+                        <h3>Form Pengisian Data Retail</h3>
                         <span>Harap mengisi <b>semua</b> form yang telah tertera</span>
                     </div>
                     <div className="card-block">
@@ -20,17 +21,17 @@ export default class KelolaDataDistributor extends Component {
                                 <div id="wizard">
                                     <section>
                                         <form className="wizard-form" id="example-advanced-form" action="#">
-                                            <h3> Data Distributor </h3>
+                                            <h3> Data Retail </h3>
                                             <fieldset>
                                                 <div className="form-group row">
                                                     <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="nama_distributor" className="block">
-                                                            Nama Distributor
+                                                        <label htmlFor="nama_retail" className="block">
+                                                            Nama Retail
                                                         </label>
                                                     </div>
                                                     <div className="col-md-8 col-lg-10">
 
-                                                        <input id="nama_distributor" name="nama_distributor" type="text"
+                                                        <input id="nama_retail" name="nama_retail" type="text"
                                                             className="required form-control  form-control-capitalize" />
                                                     </div>
                                                 </div>
@@ -121,7 +122,15 @@ export default class KelolaDataDistributor extends Component {
                                                        />
                                                 </div>
                                             </fieldset>
-                                           
+                                            <h3> Foto Tempat </h3>
+                                            <fieldset>
+                                                <div>
+                                                    <div className="sub-title">Upload foto Tempat anda</div>
+                                                    <input type="file" name="files[]" id="filer_input2"
+                                                        multiple="multiple" />
+                                                </div>
+                                            </fieldset>
+                                            
                                         </form>
 
                                     </section>

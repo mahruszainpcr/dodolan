@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+// import Link from 'next/link'
+  
 export default class ProdukDistributor extends Component {
     render() {
         return (
@@ -7,149 +8,723 @@ export default class ProdukDistributor extends Component {
                 
 <div>
     <div className="page-body">
-        <div className="row">
-            <div className="col">
-                <div className="card">
-                    <div className="card-header">
-                        <h3>Input Produk</h3>
-                        <span>Harap mengisi <b>semua</b> form yang telah tertera</span>
-                    </div>
-                    <div className="card">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div id="wizard">
-                                    <section>
-                                        <form className="wizard-form" id="example-advanced-form" action="#">
-                                            <h3> Data Distributor </h3>
-                                            <fieldset>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="nama_distributor" className="block">
-                                                            Nama Distributor
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-
-                                                        <input id="nama_distributor" name="nama_distributor" type="text"
-                                                            className="required form-control  form-control-capitalize" />
-                                                    </div>
-                                                </div>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="alamat" className="block">
-                                                            Alamat
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                    <input id="alamat" name="alamat" type="text"
-                                                            className="required form-control " />
-                                                    </div>
-                                                </div>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="ktp" className="block">
-                                                            No KTP
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                    <input id="ktp" name="ktp" type="text"
-                                                            className="required form-control " />
-                                                    </div>
-                                                </div>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="username" className="block">
-                                                            Nama Pengguna
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                    <input id="username" name="username" type="text"
-                                                            className="required form-control " />
-                                                    </div>
-                                                </div>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="email" className="block">
-                                                            Email
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                    <input id="email" name="email" type="email"
-                                                            className="required form-control " />
-                                                    </div>
-                                                </div>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="nohp" className="block">
-                                                            Nomor Telepon/HP
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                    <input id="nohp" name="nohp" type="text"
-                                                            className="required form-control " />
-                                                    </div>
-                                                </div>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="deskripsi" className="block">
-                                                            Deskripsi
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                        <textarea name="deskripsi" id="deskripsi" cols="10" rows="3"
-                                                            className="form-control required"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="catatan" className="block">
-                                                            Catatan
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                        <textarea name="catatan" id="catatan" cols="10" rows="2"
-                                                            className="form-control required"></textarea>
-                                                    </div>
-                                                </div>
-                                                {/* <div className="form-group row">
-                                                    <div className="col-md-4 col-lg-2">
-                                                        <label htmlFor="confirm-2" className="block">
-                                                            Stock
-                                                        </label>
-                                                    </div>
-                                                    <div className="col-md-8 col-lg-10">
-                                                        <input id="confirm-2" name="confirm" type="password"
-                                                            className="form-control required" />
-                                                    </div>
-                                                </div> */}
-                                            </fieldset>
-                                            <h3> Foto KTP </h3>
-                                            <fieldset>
-                                                <div>
-                                                    <div className="sub-title">Upload foto KTP anda</div>
-                                                    <input type="file" name="files[]" id="filer_input1"
-                                                       />
-                                                </div>
-                                            </fieldset>
-                                            <h3> Foto Tempat </h3>
-                                            <fieldset>
-                                                <div>
-                                                    <div className="sub-title">Upload foto Tempat anda</div>
-                                                    <input type="file" name="files[]" id="filer_input2"
-                                                        multiple="multiple" />
-                                                </div>
-                                            </fieldset>
-                                        </form>
-
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div className="row">
+  <div className="col-sm-12">
+    {/* Product list card start */}
+    <div className="card">
+      <div className="card-header">
+        <h5>Product List</h5>
+       
+        <button
+          type="button"
+          className="btn btn-primary waves-effect waves-light f-right d-inline-block md-trigger"
+          data-modal="modal-13"
+        >
+          {" "}
+          <i className="icofont icofont-plus m-r-5" /> Add Product
+        </button>
+ 
+      </div>
+      <div className="card-block">
+        <div className="table-responsive">
+          <div className="table-content">
+            <div className="project-table">
+              <table
+                id="e-product-list"
+                className="table table-striped dt-responsive nowrap"
+              >
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Amount</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l1.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6>Frock Designs</h6>
+                      <span>
+                        Lorem ipsum dolor sit consec te imperdiet iaculis
+                        ipsum..
+                      </span>
+                    </td>
+                    <td>$456</td>
+                    <td>
+                      <label className="text-danger">Out Of Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l6.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> Style Tops </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$689</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l2.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> Kurta Women </h6>
+                      <span>
+                        Lorem ipsum dolor sit consec te imperdiet iaculis
+                        ipsum..
+                      </span>
+                    </td>
+                    <td>$755</td>
+                    <td>
+                      <label className="text-warning">Low Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l3.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Lorem ipsum dolor sit consec te imperdiet iaculis
+                        ipsum..
+                      </span>
+                    </td>
+                    <td>$989</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l4.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> Black Frock For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$1150</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l5.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Lorem ipsum dolor sit consec te imperdiet iaculis
+                        ipsum..
+                      </span>
+                    </td>
+                    <td>$2006</td>
+                    <td>
+                      <label className="text-danger">Out Of Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l7.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> Digital Print Top </h6>
+                      <span>
+                        sum dolor sit consec te imperdiet iaculis ipsum..
+                      </span>
+                    </td>
+                    <td>$1199</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l8.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> One Piece Dress</h6>
+                      <span className="text-muted f-12">
+                        Lorem ipsum dolor sit consec te imperdiet iaculis
+                        ipsum..
+                      </span>
+                    </td>
+                    <td>$589</td>
+                    <td>
+                      <label className="text-warning">Low Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l9.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> kurat style Dress </h6>
+                      <span>
+                        sum dolor sit consec te imperdiet iaculis ipsum..
+                      </span>
+                    </td>
+                    <td>$1255</td>
+                    <td>
+                      <label className="text-danger">Out Of Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l8.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$499</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l7.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$259</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l6.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$456</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l5.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$456</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l4.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$456</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l2.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$456</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pro-list-img">
+                      <img
+                        src="..\files\assets\images\product-list\pro-l1.png"
+                        className="img-fluid"
+                        alt="tbl"
+                      />
+                    </td>
+                    <td className="pro-name">
+                      <h6> T Shirts For Women </h6>
+                      <span>
+                        Interchargebla lens Digital Camera with APS-C-X Trans
+                        CMOS Sens
+                      </span>
+                    </td>
+                    <td>$456</td>
+                    <td>
+                      <label className="text-success">In Stock</label>
+                    </td>
+                    <td className="action-icon">
+                      <a
+                        href="#!"
+                        className="m-r-15 text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Edit"
+                      >
+                        <i className="icofont icofont-ui-edit" />
+                      </a>
+                      <a
+                        href="#!"
+                        className="text-muted"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title
+                        data-original-title="Delete"
+                      >
+                        <i className="icofont icofont-delete-alt" />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+    {/* Product list card end */}
+  </div>
+</div>;
+
+       </div>
 </div>
             </div>
         )

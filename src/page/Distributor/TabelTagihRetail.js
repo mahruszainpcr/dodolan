@@ -9,9 +9,6 @@ export default class TabelTagihRetail extends Component {
 render() {
 return (
 <div>
-
-    <div>
-
         <div className="card">
             <div className="card-header">
                 <h5>Data Penagihan ke Retail</h5>
@@ -91,7 +88,7 @@ return (
         /* Multi Select table end */
         }
 
-    </div>
+    
 </div>
 
 )
@@ -228,19 +225,3 @@ return(
 
 );
 }
-
-// swal({
-// title: "An input!",
-// text: "Write something interesting:",
-// type: "input",
-// showCancelButton: true,
-// closeOnConfirm: false,
-// inputPlaceholder: "Write something"
-// }, function (inputValue) {
-// if (inputValue === false) return false;
-// if (inputValue === "") {
-// swal.showInputError("You need to write something!");
-// return false
-// }
-// swal("Nice!", "You wrote: " + inputValue, "success");
-// });

@@ -9,7 +9,7 @@ return (
             <div className="col">
                 <div className="card">
                     <div className="card-header">
-                        <h3>Input Produk</h3>
+                        <h3>Form Pengisian Data Produk</h3>
                         <span>Harap mengisi <b>semua</b> form yang telah tertera</span>
                     </div>
                     <div className="card">

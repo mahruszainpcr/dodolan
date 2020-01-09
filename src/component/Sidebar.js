@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 function Sidebar()  {
     return ( 
       <nav className="pcoded-navbar">
@@ -40,6 +41,13 @@ function Sidebar()  {
             </a>
             <ul className="pcoded-submenu">
               <li className>
+                <a href="keloladatadistributor">
+                  <span className="pcoded-mtext">Tambah Data</span>
+                </a>
+              </li>
+            </ul>
+            <ul className="pcoded-submenu">
+              <li className>
                 <a href="produkdistributor">
                   <span className="pcoded-mtext">Lihat Produk</span>
                 </a>
@@ -47,8 +55,8 @@ function Sidebar()  {
             </ul>
             <ul className="pcoded-submenu">
               <li className>
-                <a href="keloladatadistributor">
-                  <span className="pcoded-mtext">Tambah Data</span>
+                <a href="stock">
+                  <span className="pcoded-mtext">Stock</span>
                 </a>
               </li>
             </ul>
@@ -60,6 +68,64 @@ function Sidebar()  {
               </li>
             </ul>
             </li>
+            {/* start retail */}
+            <li className="pcoded-hasmenu">
+            <a href="javascript:void(0)">
+              <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
+              <span className="pcoded-mtext">Kelola Retail</span>
+            </a>
+            <ul className="pcoded-submenu">
+              <li className>
+                <a href="keloladataretail">
+                  <span className="pcoded-mtext">Tambah Data</span>
+                </a>
+              </li>
+            </ul>
+            <ul className="pcoded-submenu">
+              <li className>
+                <a href="listproduk">
+                  <span className="pcoded-mtext">List Produk</span>
+                </a>
+            
+              </li>
+            </ul>
+            <ul className="pcoded-submenu">
+              <li className>
+                
+                <a href="detailproduk">
+                  <span className="pcoded-mtext">Detail Produk</span>
+                </a>
+            
+              </li>
+            </ul>
+            </li>
+            {/* end retail */}
+            {/* start Tim Lapangan */}
+            <li className="pcoded-hasmenu">
+            <a href="javascript:void(0)">
+              <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
+              <span className="pcoded-mtext">Kelola Tim Lapangan</span>
+            </a>
+            <ul className="pcoded-submenu">
+              <li className>
+                
+                <a href="listproduk">
+                  <span className="pcoded-mtext">List Produk</span>
+                </a>
+            
+              </li>
+            </ul>
+            <ul className="pcoded-submenu">
+              <li className>
+                
+                <a href="detailproduk">
+                  <span className="pcoded-mtext">Detail Produk</span>
+                </a>
+            
+              </li>
+            </ul>
+            </li>
+            {/* end Tim Lapangan */}
         </ul>  
       </div>
     </nav> 

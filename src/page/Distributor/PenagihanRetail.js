@@ -11,13 +11,12 @@ return (
         <div className="page-body">
             <div className="row">
                 <div className="col">
-                    <TabelTagihRetail />
-                </div>                               
+                    <DataRetail />
+                </div>
             </div>
-            
-                <DataRetail />
-                {/* End */}
-             
+            <TabelTagihRetail />
+            {/* End */}
+
         </div>
     </div>
 </div>
