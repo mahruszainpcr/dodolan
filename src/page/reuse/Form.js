@@ -17,7 +17,7 @@ return (
                     <div className="row">
                         <div className="col-md-12">
                             <section>
-                                <div className="row">
+                                <div className="row container">
                                     <div className="col-md-4">
                                         <Input label="Nama Pabrik" name="namaPabrik" type="text" />
                                     </div>
@@ -28,7 +28,7 @@ return (
                                         <InputTanggal label="Tanggal" />
                                     </div>
                                 </div>
-                                <div className="row mt-3">
+                                <div className="row mt-3 container">
                                     <div className="col-md-4">
                                     <InputSelect label="Nama Produk" name="namaProduk"  />
                                     </div>
@@ -39,6 +39,10 @@ return (
                                     <button class="btn btn-success btn-inline "><i class="icofont icofont-ui-add"></i>Tambah</button>
                                 
                                     </div>
+                                    <div class="card-footer mt-2 ml-auto">
+                    <button type="button" class="btn btn-secondary mr-3">Batal</button>
+                    <button type="button" class="btn btn-primary">Simpan</button>
+                </div>
                                 </div>
                             </section>
                         </div>
