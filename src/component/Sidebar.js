@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {Component } from 'react';
 import Link from 'next/link'
 function Sidebar()  {
     return ( 
       <nav className="pcoded-navbar">
       <div className="pcoded-inner-navbar main-menu">
-        <div className="pcoded-navigatio-lavel">Navigation</div>
+        <div className="pcoded-navigatio-lavel">Dodolan</div>
         <ul className="pcoded-item pcoded-left-item">
           <li className="pcoded-hasmenu">
             <a href="javascript:void(0)">
@@ -12,60 +12,41 @@ function Sidebar()  {
               <span className="pcoded-mtext">Dashboard</span>
             </a>
             <ul className="pcoded-submenu">
-              <li className>
-                <a href="home">
-                  <span className="pcoded-mtext">Home</span>
-                </a>
-              </li>
-              <li className>
-                <a href="/">
-                  <span className="pcoded-mtext">Dashboard</span>
-                </a>
-              </li>
-              <li className=" ">
-              <a href="forminputproduk">
-                  <span className="pcoded-mtext">Input Produk</span>
-                </a>
-              </li>
-              <li className=" ">
-              <a href="notfound">
-                  <span className="pcoded-mtext">Notfound</span>
-                </a>
-              </li>
+              <SubMenu tujuan="/" nama="Dashboard"/>
+              <SubMenu tujuan="notfound" nama="notfound"/>
             </ul>
           </li>
+          <li className="pcoded-hasmenu">
+            <a href="javascript:void(0)">
+              <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
+              <span className="pcoded-mtext">Produk</span>
+            </a>
+            <ul className="pcoded-submenu">
+            <SubMenu tujuan="inputproduk" nama="Input Produk"/>
+            <SubMenu tujuan="stock" nama="Stock"/>
+            </ul>
+            </li>
+            <li className="pcoded-hasmenu">
+            <a href="javascript:void(0)">
+              <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
+              <span className="pcoded-mtext">Distributor</span>
+            </a>
+            <ul className="pcoded-submenu">
+            <SubMenu tujuan="listprodukdistributor" nama="List Produk"/>
+            <SubMenu tujuan="profil" nama="Profil"/>
+            <SubMenu tujuan="penagihanretail" nama="Penagihan Retail"/>
+            </ul>
+            </li>
           <li className="pcoded-hasmenu">
             <a href="javascript:void(0)">
               <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
               <span className="pcoded-mtext">Kelola Distributor</span>
             </a>
             <ul className="pcoded-submenu">
-              <li className>
-                <a href="keloladatadistributor">
-                  <span className="pcoded-mtext">Tambah Data</span>
-                </a>
-              </li>
-            </ul>
-            <ul className="pcoded-submenu">
-              <li className>
-                <a href="produkdistributor">
-                  <span className="pcoded-mtext">Lihat Produk</span>
-                </a>
-              </li>
-            </ul>
-            <ul className="pcoded-submenu">
-              <li className>
-                <a href="stock">
-                  <span className="pcoded-mtext">Stock</span>
-                </a>
-              </li>
-            </ul>
-            <ul className="pcoded-submenu">
-              <li className>
-                <a href="penagihanretail">
-                  <span className="pcoded-mtext">Penagihan Retail</span>
-                </a>
-              </li>
+            <SubMenu tujuan="keloladatadistributor" nama="Tambah Data"/>
+            <SubMenu tujuan="produkdistributor" nama="Lihat Produk"/>
+            <SubMenu tujuan="penagihanretail" nama="Penagihan Retail"/>
+            <SubMenu tujuan="stock" nama="Stock"/>
             </ul>
             </li>
             {/* start retail */}
@@ -75,28 +56,9 @@ function Sidebar()  {
               <span className="pcoded-mtext">Kelola Retail</span>
             </a>
             <ul className="pcoded-submenu">
-              <li className>
-                <a href="keloladataretail">
-                  <span className="pcoded-mtext">Tambah Data</span>
-                </a>
-              </li>
-            </ul>
-            <ul className="pcoded-submenu">
-              <li className>
-                <a href="listproduk">
-                  <span className="pcoded-mtext">List Produk</span>
-                </a>
-            
-              </li>
-            </ul>
-            <ul className="pcoded-submenu">
-              <li className>
-                
-                <a href="detailproduk">
-                  <span className="pcoded-mtext">Detail Produk</span>
-                </a>
-            
-              </li>
+            <SubMenu tujuan="keloladataretail" nama="Tambah"/>
+            <SubMenu tujuan="listproduk" nama="List"/>
+            <SubMenu tujuan="detailproduk" nama="Detail"/>
             </ul>
             </li>
             {/* end retail */}
@@ -107,22 +69,7 @@ function Sidebar()  {
               <span className="pcoded-mtext">Kelola Tim Lapangan</span>
             </a>
             <ul className="pcoded-submenu">
-              <li className>
-                
-                <a href="listproduk">
-                  <span className="pcoded-mtext">List Produk</span>
-                </a>
-            
-              </li>
-            </ul>
-            <ul className="pcoded-submenu">
-              <li className>
-                
-                <a href="detailproduk">
-                  <span className="pcoded-mtext">Detail Produk</span>
-                </a>
-            
-              </li>
+            <SubMenu tujuan="blacklist" nama="Blacklist"/>
             </ul>
             </li>
             {/* end Tim Lapangan */}
@@ -131,5 +78,18 @@ function Sidebar()  {
     </nav> 
   );
 }
+
+class SubMenu extends Component {
+  state = {  }
+  render() { 
+    return (  <li className>
+      <a href={ this.props.tujuan }>
+        <span className="pcoded-mtext">{ this.props.nama}</span>
+      </a>
+    </li> );
+  }
+}
+ 
+
 
 export default Sidebar;

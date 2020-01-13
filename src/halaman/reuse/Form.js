@@ -34,11 +34,7 @@ return (
                                     <div className="col-md-4">
                                       
                                     </div>
-                                    <div class="card-footer mt-2 ml-auto">
-                                        <button type="button" class="btn btn-secondary mr-3">Batal</button>
-                                        <button type="button" class="btn btn-primary">Simpan</button>
-                                    </div>
-                                </div>
+                                        </div>
                             </section>
                         </div>
                     </div>
@@ -58,7 +54,7 @@ render() {
 return (
 <div>
     <label> {this.props.label} </label>
-    <input type={this.props.type} name={this.props.name} id={this.props.name} className="form-control" />
+    <input type={this.props.type} name={this.props.name} id={this.props.name} className="form-control form-control-capitalize" />
 </div>
 );
 }
@@ -71,7 +67,7 @@ return (
 <div>
     <label> {this.props.label} </label>
 
-    <input id="dropper-animation" className="form-control" type="text" placeholder="Klik kolom ini"></input>
+    <input id="dropper-animation" className="form-control" type="date" placeholder="Klik kolom ini"></input>
 </div>
 );
 }
