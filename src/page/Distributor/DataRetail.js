@@ -23,7 +23,6 @@ return (
 )
 }
 }
-
 class UserActivity extends Component {
 state = { }
 render() {
@@ -35,63 +34,10 @@ return (
                 <h5>Activity</h5>
             </div>
             <div className="card-block">
-                <div className="row m-b-25">
-                    <div className="col-auto p-r-0">
-                        <div className="u-img">
-                            <img src="..\files\assets\images\breadcrumb-bg.jpg" alt="user image"
-                                className="img-radius cover-img" />
-                            <img src="..\files\assets\images\avatar-2.jpg" alt="user image"
-                                className="img-radius profile-img" />
-                        </div>
-                    </div>
-                    <div className="col">
-                        <h6 className="m-b-5">PT. Sehat Sentosa</h6>
-                        <p className="text-muted m-b-0">
-                            Membeli produk anda
-                        </p>
-                        <p className="text-muted m-b-0">
-                            <i className="feather icon-clock m-r-10" />2 min ago
-                        </p>
-                    </div>
-                </div>
-                <div className="row m-b-25">
-                    <div className="col-auto p-r-0">
-                        <div className="u-img">
-                            <img src="..\files\assets\images\breadcrumb-bg.jpg" alt="user image"
-                                className="img-radius cover-img" />
-                            <img src="..\files\assets\images\avatar-2.jpg" alt="user image"
-                                className="img-radius profile-img" />
-                        </div>
-                    </div>
-                    <div className="col">
-                        <h6 className="m-b-5">PT. Makmur Jaya</h6>
-                        <p className="text-muted m-b-0">
-                            Melakukan pemabayaran kredit 
-                        </p>
-                        <p className="text-muted m-b-0">
-                            <i className="feather icon-clock m-r-10" />3 min ago
-                        </p>
-                    </div>
-                </div>
-                <div className="row m-b-25">
-                    <div className="col-auto p-r-0">
-                        <div className="u-img">
-                            <img src="..\files\assets\images\breadcrumb-bg.jpg" alt="user image"
-                                className="img-radius cover-img" />
-                            <img src="..\files\assets\images\avatar-2.jpg" alt="user image"
-                                className="img-radius profile-img" />
-                        </div>
-                    </div>
-                    <div className="col">
-                        <h6 className="m-b-5">PT. Lokan Jaya</h6>
-                        <p className="text-muted m-b-0">
-                            Melakukan pembayaran INV-32912
-                        </p>
-                        <p className="text-muted m-b-0">
-                            <i className="feather icon-clock m-r-10" />5 min ago
-                        </p>
-                    </div>
-                </div>
+              <Aktifitas image="..\files\assets\images\breadcrumb-bg.jpg" nama_retail="PT. Surya Swakarsa" aktifitas="Melakukan pembelian" waktu="2 min ago"/>
+              <Aktifitas image="..\files\assets\images\breadcrumb-bg.jpg" nama_retail="PT. Surya Swakarsa" aktifitas="Melakukan pembelian" waktu="2 min ago"/>
+              <Aktifitas image="..\files\assets\images\breadcrumb-bg.jpg" nama_retail="PT. Surya Swakarsa" aktifitas="Melakukan pembelian" waktu="2 min ago"/>
+                  
                 <div className="text-center">
                     <a href="#!" className="b-b-primary text-primary">
                         Lihat Transaksi Lainnya
@@ -103,7 +49,32 @@ return (
 );
 }
 }
-
+// ..\files\assets\images\breadcrumb-bg.jpg"
+class Aktifitas extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <div className="row m-b-25">
+            <div className="col-auto p-r-0">
+                <div className="u-img">
+                    <img src={this.props.image} alt="user image"
+                        className="img-radius cover-img" />
+                </div>
+            </div>
+            <div className="col">
+                <h6 className="m-b-5">{this.props.nama_retail}</h6>
+                <p className="text-muted m-b-0">
+                    {this.props.aktifitas}
+                </p>
+                <p className="text-muted m-b-0">
+                    <i className="feather icon-clock m-r-10" />{this.props.waktu}
+                </p>
+            </div>
+        </div>
+         );
+    }
+}
+ 
 class ListRetail extends Component {
     state = {  }
     render() { 

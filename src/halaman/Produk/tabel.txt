@@ -1,0 +1,1 @@
+	id_produk	nama_produk	deskripsi_produk	harga_dalam_produk	harga_luar_produk	harga_pulau_produk	id_kelas_pasaran	id_sub_sub_kategori	id_brand	id_satuan	id_ukuran	id_warna	id_distributor
