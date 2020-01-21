@@ -1,41 +1,32 @@
 import React,{ Component } from 'react'
 
+const gambarStyle =  {
+  
+  width: '360px'
+};
+  
+
 class DetailProduct extends Component {
-    state = {  }
+  constructor(props) {
+    super(props);
+    this.state = {gambar: this.props.gambar}
+  }
     render() { 
         return ( 
 
-            <div className="row">
-  <div className="col-md-12">
-    {/* Product detail page start */}
-    <div className="card product-detail-page">
+<div className="card product-detail-page">
       <div className="card-block">
         <div className="row">
           <div className="col-lg-5 col-xs-12">
             <div className="port_details_all_img row">
               <div className="col-lg-12 m-b-15">
                 <div id="big_banner">
-                  <div className="port_big_img">
-                    <img className="img img-fluid" src="..\files\assets\images\product-detail\pro-d-l-1.jpg" alt="Big_ Details" />
-                  </div>
-                  <div className="port_big_img">
-                    <img className="img img-fluid" src="..\files\assets\images\product-detail\pro-d-l-2.jpg" alt="Big_ Details" />
-                  </div>
-                  <div className="port_big_img">
-                    <img className="img img-fluid" src="..\files\assets\images\product-detail\pro-d-l-3.jpg" alt="Big_ Details" />
-                  </div>
-                  <div className="port_big_img">
-                    <img className="img img-fluid" src="..\files\assets\images\product-detail\pro-d-l-4.jpg" alt="Big_ Details" />
-                  </div>
-                  <div className="port_big_img">
-                    <img className="img img-fluid" src="..\files\assets\images\product-detail\pro-d-l-5.jpg" alt="Big_ Details" />
-                  </div>
-                  <div className="port_big_img">
-                    <img className="img img-fluid" src="..\files\assets\images\product-detail\pro-d-l-6.jpg" alt="Big_ Details" />
-                  </div>
-                  <div className="port_big_img">
-                    <img className="img img-fluid" src="..\files\assets\images\product-detail\pro-d-l-7.jpg" alt="Big_ Details" />
-                  </div>
+                {this.state.gambar.map(gambar =>  <div className="port_big_img">
+                       <img className="img img-fluid" src={gambar} alt="Big_ Details"/>
+                  </div>)}
+                  
+                 
+                 
                 </div>
               </div>
               <div className="col-lg-12 product-right">
@@ -129,12 +120,13 @@ class DetailProduct extends Component {
         </div>
       </div>
     </div>
-    {/* Product detail page end */}
-  </div></div>
+  
+
 
 
          );
     }
 }
+
  
 export default DetailProduct;
