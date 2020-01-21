@@ -12,6 +12,7 @@ import InputProduk from './halaman/Produk/Input';
 import Stock from './halaman/Distributor/Stock';
 import ProductDetail from './halaman/Produk/ProductDetail';
 // Distributor
+import InputDistributor from './halaman/Distributor/Input';
 import Profil from './halaman/Distributor/Profil';
 // {end new}
 // Distributor
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" exact component={Dashboard} />
         <Route path="/home" exact component={Home} />
         <Route path="/InputProduk" exact component={InputProduk} />
+        <Route path="/InputDistributor" exact component={InputDistributor} />
         <Route path="/Profil" exact component={Profil} />
         <Route path="/ProductDetail" exact component={ProductDetail} />
         <Route path="/FormInputProduk" exact component={FormInputProduk} />

@@ -33,6 +33,7 @@ function Sidebar()  {
               <span className="pcoded-mtext">Distributor</span>
             </a>
             <ul className="pcoded-submenu">
+            <SubMenu tujuan="inputdistributor" nama="Input Distributor"/>
             <SubMenu tujuan="listprodukdistributor" nama="List Produk"/>
             <SubMenu tujuan="profil" nama="Profil"/>
             <SubMenu tujuan="penagihanretail" nama="Penagihan Retail"/>
