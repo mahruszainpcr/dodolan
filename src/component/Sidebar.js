@@ -24,6 +24,7 @@ function Sidebar()  {
             <ul className="pcoded-submenu">
             <SubMenu tujuan="inputproduk" nama="Input Produk"/>
             <SubMenu tujuan="stock" nama="Stock"/>
+            <SubMenu tujuan="productdetail" nama="Product Detail"/>
             </ul>
             </li>
             <li className="pcoded-hasmenu">

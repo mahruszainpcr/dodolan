@@ -10,9 +10,11 @@ import Home from './page/Home';
 // Produk
 import InputProduk from './halaman/Produk/Input';
 import Stock from './halaman/Distributor/Stock';
-// {end new}
+import ProductDetail from './halaman/Produk/ProductDetail';
 // Distributor
 import Profil from './halaman/Distributor/Profil';
+// {end new}
+// Distributor
 import FormInputProduk from './page/Distributor/FormInputProduk';
 import KelolaDataDistributor from './page/Distributor/KelolaDataDistributor';
 import ProdukDistributor from './page/Distributor/ProdukDistributor';
@@ -35,6 +37,7 @@ function App() {
         <Route path="/home" exact component={Home} />
         <Route path="/InputProduk" exact component={InputProduk} />
         <Route path="/Profil" exact component={Profil} />
+        <Route path="/ProductDetail" exact component={ProductDetail} />
         <Route path="/FormInputProduk" exact component={FormInputProduk} />
         <Route path="/KelolaDataDistributor" exact component={KelolaDataDistributor} />
         <Route path="/ProdukDistributor" exact component={ProdukDistributor} />
