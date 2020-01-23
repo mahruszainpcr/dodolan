@@ -35,20 +35,21 @@ function App() {
       <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Dashboard} />
-        <Route path="/home" exact component={Home} />
-        <Route path="/InputProduk" exact component={InputProduk} />
-        <Route path="/InputDistributor" exact component={InputDistributor} />
-        <Route path="/Profil" exact component={Profil} />
-        <Route path="/ProductDetail" exact component={ProductDetail} />
-        <Route path="/FormInputProduk" exact component={FormInputProduk} />
-        <Route path="/KelolaDataDistributor" exact component={KelolaDataDistributor} />
-        <Route path="/ProdukDistributor" exact component={ProdukDistributor} />
-        <Route path="/Stock" exact component={Stock} />
-        <Route path="/KelolaDataRetail" exact component={KelolaDataRetail} />
-        <Route path="/PenagihanRetail" exact component={PenagihanRetail} />
-        <Route path="/ListProduk" exact component={ListProduk} />
-        <Route path="/DetailProduk" exact component={DetailProduk} />
-        <Route path="/Blacklist" exact component={Blacklist} />
+        <Route path="/home" component={Home} />
+        <Route path="/InputProduk" component={InputProduk} />
+        <Route path="/InputDistributor" component={InputDistributor} />
+        <Route path="/Profil" component={Profil} />
+        <Route path="/ProductDetail" component={ProductDetail} />
+        <Route path="/ProductDetail/:id" component={ProductDetail} />
+        <Route path="/FormInputProduk" component={FormInputProduk} />
+        <Route path="/KelolaDataDistributor" component={KelolaDataDistributor} />
+        <Route path="/ProdukDistributor" component={ProdukDistributor} />
+        <Route path="/Stock" component={Stock} />
+        <Route path="/KelolaDataRetail" component={KelolaDataRetail} />
+        <Route path="/PenagihanRetail" component={PenagihanRetail} />
+        <Route path="/ListProduk" component={ListProduk} />
+        <Route path="/DetailProduk" component={DetailProduk} />
+        <Route path="/Blacklist" component={Blacklist} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
