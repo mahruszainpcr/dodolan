@@ -53,7 +53,7 @@ class InputText extends Component {
         return ( 
             <FormGroup>
                 <Label for={this.props.id}>{this.props.name}</Label>
-                <input type="text" name={this.props.id} id={this.props.id} placeholder={this.props.placeholder} className="form-control" />
+                <input type="text" name={this.props.id} id={this.props.id} placeholder={this.props.placeholder} className="form-control form-control-capitalize" />
             </FormGroup>
          );
     }

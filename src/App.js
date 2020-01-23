@@ -40,6 +40,7 @@ function App() {
         <Route path="/home" component={Home} />
         <Route path="/InputProduk" component={InputProduk} />
         <Route path="/InputDistributor" component={InputDistributor} />
+        <Route path="/InputBlacklist" component={InputBlacklist} />
         <Route path="/Profil" component={Profil} />
         <Route path="/ProductDetail" component={ProductDetail} />
         <Route path="/ProductDetail/:id" component={ProductDetail} />
