@@ -37,6 +37,7 @@ function Sidebar()  {
             <SubMenu tujuan="listprodukdistributor" nama="List Produk"/>
             <SubMenu tujuan="profil" nama="Profil"/>
             <SubMenu tujuan="penagihanretail" nama="Penagihan Retail"/>
+            <SubMenu tujuan="inputblacklist" nama="Pengajuan Blacklist"/>
             </ul>
             </li>
           <li className="pcoded-hasmenu">

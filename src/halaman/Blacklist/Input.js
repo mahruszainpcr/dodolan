@@ -1,20 +1,29 @@
 import React, { Component } from 'react'
-import { Card, CardHeader, CardBody } from 'reactstrap'
+import { InputForm, InputFormPhoto_KTP, InputFormPhoto_Profile } from './Form'
+import {Card, CardBody, CardHeader, CardTitle, Container} from 'reactstrap'
 
 class InputBlacklist extends Component {
-    state = {  }
-    render() { 
-        return ( 
-           <Card>
-               <CardHeader>
-                   <h2>Penambahan Blacklist</h2>
-               </CardHeader>
-               <CardBody>
-                   <label htmlFor=""></label>
-               </CardBody>
-           </Card>
-         );
-    }
+state = { }
+render() {
+return (
+<Container>
+    <Card className="p-5">
+        <CardTitle>
+            <h3 className="sub-title">Form Pengajuan Blacklist</h3>
+        </CardTitle>
+        <CardBody>
+            <div className="row">
+                <div className="col-12">
+
+            <InputForm />
+               
+                </div>
+            </div>
+        </CardBody>
+    </Card>
+</Container>
+);
 }
- 
+}
+
 export default InputBlacklist;
