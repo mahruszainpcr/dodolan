@@ -40,9 +40,9 @@ function App() {
         <Route path="/home" component={Home} />
         <Route path="/InputProduk" component={InputProduk} />
         <Route path="/InputDistributor" component={InputDistributor} />
-        <Route path="/InputBlacklist" component={InputBlacklist} />
         <Route path="/Profil" component={Profil} />
         <Route path="/ProductDetail" component={ProductDetail} />
+        <Route path="/ProductDetail/:id" component={ProductDetail} />
         <Route path="/FormInputProduk" component={FormInputProduk} />
         <Route path="/KelolaDataDistributor" component={KelolaDataDistributor} />
         <Route path="/ProdukDistributor" component={ProdukDistributor} />
