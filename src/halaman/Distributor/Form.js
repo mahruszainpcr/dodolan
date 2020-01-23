@@ -74,5 +74,6 @@ class InputFormPhoto_Profile extends Component {
          );
     }
 }
+
  
 export  {InputForm,InputFormPhoto_KTP,InputFormPhoto_Profile};

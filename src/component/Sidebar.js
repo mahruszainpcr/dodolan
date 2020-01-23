@@ -6,6 +6,7 @@ function Sidebar()  {
       <div className="pcoded-inner-navbar main-menu">
         <div className="pcoded-navigatio-lavel">Dodolan</div>
         <ul className="pcoded-item pcoded-left-item">
+          {/* dashboard */}
           <li className="pcoded-hasmenu">
             <a href="javascript:void(0)">
               <span className="pcoded-micon"><i className="feather icon-home" /></span>
@@ -16,6 +17,18 @@ function Sidebar()  {
               <SubMenu tujuan="notfound" nama="notfound"/>
             </ul>
           </li>
+          {/* Admin */}
+          <li className="pcoded-hasmenu">
+            <a href="javascript:void(0)">
+              <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
+              <span className="pcoded-mtext">Admin</span>
+            </a>
+            <ul className="pcoded-submenu">
+            <SubMenu tujuan="utilitas" nama="Tambah Utilitas"/>
+            
+            </ul>
+            </li>
+            {/* produk */}
           <li className="pcoded-hasmenu">
             <a href="javascript:void(0)">
               <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
@@ -27,6 +40,7 @@ function Sidebar()  {
             <SubMenu tujuan="productdetail" nama="Product Detail"/>
             </ul>
             </li>
+            {/* distributor */}
             <li className="pcoded-hasmenu">
             <a href="javascript:void(0)">
               <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
@@ -40,6 +54,7 @@ function Sidebar()  {
             <SubMenu tujuan="inputblacklist" nama="Pengajuan Blacklist"/>
             </ul>
             </li>
+            {/* lama */}
           <li className="pcoded-hasmenu">
             <a href="javascript:void(0)">
               <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>

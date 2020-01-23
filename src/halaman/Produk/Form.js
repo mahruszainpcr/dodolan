@@ -70,6 +70,21 @@ return (
 );
 }
 }
+class SelectProduct extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for={this.props.id}>{this.props.name}</Label>
+            <Input type="select" name={this.props.id} id={this.props.id}>
+            <option>Pilihan 1</option>
+            <option>Pilihan 2</option>
+            <option>Pilihan 3</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
 
 class InputFormPhoto_KTP extends Component {
 state = { }
@@ -157,4 +172,4 @@ class InputSelect extends Component {
     }
 }
  
-export  {InputForm,InputFormPhoto};
+export  {InputForm,InputFormPhoto,SelectProduct};

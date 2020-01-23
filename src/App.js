@@ -16,6 +16,9 @@ import InputDistributor from './halaman/Distributor/Input';
 import Profil from './halaman/Distributor/Profil';
 // Blacklist
 import InputBlacklist from './halaman/Blacklist/Input'
+// Admin
+import Utilitas from './halaman/Admin/Form'
+
 // {end new}
 // Distributor
 import FormInputProduk from './page/Distributor/FormInputProduk';
@@ -41,6 +44,7 @@ function App() {
         <Route path="/InputProduk" component={InputProduk} />
         <Route path="/InputDistributor" component={InputDistributor} />
         <Route path="/InputBlacklist" component={InputBlacklist} />
+        <Route path="/Utilitas" component={Utilitas} />
         <Route path="/Profil" component={Profil} />
         <Route path="/ProductDetail" component={ProductDetail} />
         <Route path="/ProductDetail/:id" component={ProductDetail} />

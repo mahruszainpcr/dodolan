@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { InputForm, InputFormPhoto } from './Form'
+import {SelectDistributor} from '../Distributor/Form'
 import {Card, CardBody, CardHeader, CardTitle, Container} from 'reactstrap'
 
 class InputProduk extends Component {
@@ -19,6 +20,7 @@ return (
                 </div>
                 <div className="col-5">
                     <InputFormPhoto/>
+                   
                 </div>
             </div>
         </CardBody>
