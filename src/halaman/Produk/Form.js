@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Card, CardHeader, Form, FormGroup, Label, Input, FormText, Button, CardFooter} from 'reactstrap'
+import {SelectKelasPasaran, SelectKategori, SelectSubKategori, SelectSubSubKategori,SelectBrand, SelectSatuan} from '../reuse/Select'
 
 class InputForm extends Component {
 state = { }
@@ -23,25 +24,25 @@ return (
             </div>
         </div>
     </FormGroup>
-    <InputSelect id="id_kelas_pasaran" name="Pilih Kelas Pasaran" />
+    <SelectKelasPasaran/>
     <FormGroup>
         <div className="row">
             <div className="col-4">
-                <InputSelect id="id_kategori" name="Pilih Kategori" />
+                <SelectKategori/>
 
             </div>
             <div className="col-4">
-                <InputSelect id="id_sub_kategori" name="Pilih Sub Kategori" />
+                <SelectSubKategori/>
 
             </div>
             <div className="col-4">
-                <InputSelect id="id_sub_sub_kategori" name="Pilih Sub Sub Kategori" />
+                <SelectSubSubKategori/>
 
             </div>
         </div>
     </FormGroup>
-    <InputSelect id="id_brand" name="Pilih Brand" />
-    <InputSelect id="id_satuan" name="Pilih Satuan" />
+    <SelectBrand/>
+   <SelectSatuan/>
 
     <FormGroup>
         <Label for="id_warna">Warna</Label>

@@ -18,7 +18,8 @@ import Profil from './halaman/Distributor/Profil';
 import InputBlacklist from './halaman/Blacklist/Input'
 // Admin
 import Utilitas from './halaman/Admin/Form'
-
+// Promosi
+import InputPromosi from './halaman/Promosi/Form'
 // {end new}
 // Distributor
 import FormInputProduk from './page/Distributor/FormInputProduk';
@@ -44,6 +45,7 @@ function App() {
         <Route path="/InputProduk" component={InputProduk} />
         <Route path="/InputDistributor" component={InputDistributor} />
         <Route path="/InputBlacklist" component={InputBlacklist} />
+        <Route path="/InputPromosi" component={InputPromosi} />
         <Route path="/Utilitas" component={Utilitas} />
         <Route path="/Profil" component={Profil} />
         <Route path="/ProductDetail" component={ProductDetail} />

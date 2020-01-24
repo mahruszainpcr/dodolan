@@ -78,7 +78,7 @@ class SelectSubSubKategori extends Component {
     render() { 
         return ( 
             <FormGroup>
-            <Label for="nama_sub_sub_kategori">Pilih SubKategori</Label>
+            <Label for="nama_sub_sub_kategori">Pilih SubSubKategori</Label>
             <Input type="select" name="nama_sub_sub_kategori" id="nama_sub_sub_kategori">
             <option>SubSubKategori 1</option>
             <option>SubSubKategori 2</option>
@@ -89,6 +89,52 @@ class SelectSubSubKategori extends Component {
     }
 }
 
+class SelectBrand extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for="nama_brand">Pilih Brand</Label>
+            <Input type="select" name="nama_brand" id="nama_brand">
+            <option>Brand 1</option>
+            <option>Brand 2</option>
+            <option>Brand 3</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
+class SelectSatuan extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for="nama_satuan">Pilih Satuan</Label>
+            <Input type="select" name="nama_satuan" id="nama_satuan">
+            <option>Satuan 1</option>
+            <option>Satuan 2</option>
+            <option>Satuan 3</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
+class SelectKelasPasaran extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for="nama_kelas_pasaran">Pilih KelasPasaran</Label>
+            <Input type="select" name="nama_kelas_pasaran" id="nama_kelas_pasaran">
+            <option>Kelas Pasaran 1</option>
+            <option>Kelas Pasaran 2</option>
+            <option>Kelas Pasaran 3</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
 
 
-export {SelectAll, SelectDistributor, SelectKategori,SelectRetail,SelectSubKategori,SelectSubSubKategori};
+
+export {SelectAll, SelectDistributor, SelectKategori,SelectRetail,SelectSubKategori,SelectSubSubKategori, SelectBrand, SelectSatuan,SelectKelasPasaran};

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { InputForm, InputFormPhoto_KTP, InputFormPhoto_Profile } from './Form'
 import {Card, CardBody, CardHeader, CardTitle, Container} from 'reactstrap'
+import { SubJudul } from '../reuse/Typografi'
 
 class InputBlacklist extends Component {
 state = { }
@@ -9,7 +10,7 @@ return (
 <Container>
     <Card className="p-5">
         <CardTitle>
-            <h3 className="sub-title">Form Pengajuan Blacklist</h3>
+            <SubJudul name="Form Pengajuan Judul"/>
         </CardTitle>
         <CardBody>
             <div className="row">

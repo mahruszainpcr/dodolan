@@ -25,7 +25,20 @@ function Sidebar()  {
             </a>
             <ul className="pcoded-submenu">
             <SubMenu tujuan="utilitas" nama="Tambah Utilitas"/>
+            <li className="pcoded-hasmenu">
+      <a href="javascript:void(0)">
+        <span className="pcoded-mtext">Promosi</span>
+      </a>
+      <ul class="pcoded-submenu">
+                                            <li class="">
+                                                <a href="inputpromosi">
+                                                    <span class="pcoded-mtext">Input Promosi</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+    </li>
             
+     
             </ul>
             </li>
             {/* produk */}

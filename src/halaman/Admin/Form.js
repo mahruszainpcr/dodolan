@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardBody,Form, FormGroup, CardFooter, Label, Input, CardHeader, CardText, Button} from 'reactstrap'
 import { SelectKategori, SelectSubKategori,SelectSubSubKategori } from '../reuse/Select'
+import { SubJudul } from '../reuse/Typografi'
 
 
 class Utilitas extends Component {
@@ -11,13 +12,7 @@ return (
 <div className="row">
     <div className="col-4">
         <Card>
-            <CardHeader tag="h3">Brand<div className="card-header-right">
-                    <ul className="list-unstyled card-option">
-                        <li><i className="feather icon-credit-card full-card" /></li>
-                        <li><i className="feather icon-minus minimize-card" /></li>
-                        <li><i className="feather icon-trash-2 close-card" /></li>
-                    </ul>
-                </div>
+            <CardHeader><SubJudul name="Brand"/>
             </CardHeader>
             <CardBody className="card-block">
                 <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Brand terbaru</CardText>
@@ -45,13 +40,8 @@ return (
     </div>
     <div className="col-4">
         <Card>
-            <CardHeader tag="h3">Kualitas Pasaran<div className="card-header-right">
-                    <ul className="list-unstyled card-option">
-                        <li><i className="feather icon-credit-card full-card" /></li>
-                        <li><i className="feather icon-minus minimize-card" /></li>
-                        <li><i className="feather icon-trash-2 close-card" /></li>
-                    </ul>
-                </div>
+            <CardHeader>
+                <SubJudul name="Kualitas Pasaran"/>
             </CardHeader>
             <CardBody className="card-block">
                 <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Kualitas Pasaran terbaru</CardText>
@@ -79,13 +69,7 @@ return (
     </div>
     <div className="col-4">
         <Card>
-            <CardHeader tag="h3">Satuan<div className="card-header-right">
-                    <ul className="list-unstyled card-option">
-                        <li><i className="feather icon-credit-card full-card" /></li>
-                        <li><i className="feather icon-minus minimize-card" /></li>
-                        <li><i className="feather icon-trash-2 close-card" /></li>
-                    </ul>
-                </div>
+            <CardHeader><SubJudul name="Satuan"/>
             </CardHeader>
             <CardBody className="card-block">
                 <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Satuan terbaru</CardText>
@@ -115,13 +99,7 @@ return (
 
     <div className="col-4">
     <Card>
-            <CardHeader tag="h3">Kategori<div className="card-header-right">
-                    <ul className="list-unstyled card-option">
-                        <li><i className="feather icon-credit-card full-card" /></li>
-                        <li><i className="feather icon-minus minimize-card" /></li>
-                        <li><i className="feather icon-trash-2 close-card" /></li>
-                    </ul>
-                </div>
+            <CardHeader><SubJudul name="Kategori"/>
             </CardHeader>
             <CardBody className="card-block">
                 <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Kategori terbaru</CardText>
@@ -149,13 +127,7 @@ return (
     </div>
     <div className="col-4">
     <Card>
-            <CardHeader tag="h3">Sub Kategori<div className="card-header-right">
-                    <ul className="list-unstyled card-option">
-                        <li><i className="feather icon-credit-card full-card" /></li>
-                        <li><i className="feather icon-minus minimize-card" /></li>
-                        <li><i className="feather icon-trash-2 close-card" /></li>
-                    </ul>
-                </div>
+            <CardHeader><SubJudul name="Sub Kategori"/>
             </CardHeader>
             <CardBody className="card-block">
                 <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Sub Kategori terbaru</CardText>
@@ -184,13 +156,7 @@ return (
     </div>
     <div className="col-4">
     <Card>
-            <CardHeader tag="h3">Sub Sub Kategori<div className="card-header-right">
-                    <ul className="list-unstyled card-option">
-                        <li><i className="feather icon-credit-card full-card" /></li>
-                        <li><i className="feather icon-minus minimize-card" /></li>
-                        <li><i className="feather icon-trash-2 close-card" /></li>
-                    </ul>
-                </div>
+            <CardHeader><SubJudul name="Sub Sub Kategori"/>
             </CardHeader>
             <CardBody className="card-block">
                 <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Sub Sub Kategori terbaru</CardText>
@@ -203,7 +169,7 @@ return (
                         <div className="j-row">
                             <div className="span6 unit">
                             <div className="input">
-                            <SelectKategori/>
+                                <SelectKategori/>
                             <SelectSubSubKategori/>
                                     <InputText name="Nama Sub Sub Kategori" />
                                 </div>
@@ -258,27 +224,13 @@ render()
 // const props = this.props;
 return (
 <FormGroup>
-    <Label for={this.props.id}>Alasan</Label>
+    <Label for={this.props.id}>{this.props.name}</Label>
     <textarea name={this.props.id} id={this.props.id} placeholder={this.props.placeholder} className="form-control" />
     </FormGroup>
          );
     }
 }
-class InputSelect extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <FormGroup>
-            <Label for={this.props.id}>{this.props.name}</Label>
-            <Input type="select" name={this.props.id} id={this.props.id}>
-            <option>Pilihan 1</option>
-            <option>Pilihan 2</option>
-            <option>Pilihan 3</option>
-            </Input>
-        </FormGroup>
-         );
-    }
-}
+
 
  
 export  default Utilitas;
