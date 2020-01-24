@@ -63,7 +63,7 @@ class SelectSubKategori extends Component {
     render() { 
         return ( 
             <FormGroup>
-            <Label for="nama_sub_kategori">Pilih SubKategori</Label>
+            <Label for="nama_sub_kategori">Pilih Sub Kategori</Label>
             <Input type="select" name="nama_sub_kategori" id="nama_sub_kategori">
             <option>SubKategori 1</option>
             <option>SubKategori 2</option>
@@ -78,7 +78,7 @@ class SelectSubSubKategori extends Component {
     render() { 
         return ( 
             <FormGroup>
-            <Label for="nama_sub_sub_kategori">Pilih SubSubKategori</Label>
+            <Label for="nama_sub_sub_kategori">Pilih Sub Sub Kategori</Label>
             <Input type="select" name="nama_sub_sub_kategori" id="nama_sub_sub_kategori">
             <option>SubSubKategori 1</option>
             <option>SubSubKategori 2</option>
