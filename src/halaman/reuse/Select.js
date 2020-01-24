@@ -124,7 +124,7 @@ class SelectKelasPasaran extends Component {
     render() { 
         return ( 
             <FormGroup>
-            <Label for="nama_kelas_pasaran">Pilih KelasPasaran</Label>
+            <Label for="nama_kelas_pasaran">Pilih Kelas Pasaran</Label>
             <Input type="select" name="nama_kelas_pasaran" id="nama_kelas_pasaran">
             <option>Kelas Pasaran 1</option>
             <option>Kelas Pasaran 2</option>
@@ -135,6 +135,35 @@ class SelectKelasPasaran extends Component {
     }
 }
 
+class SelectProduk extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for="nama_produk">Pilih Produk</Label>
+            <Input type="select" name="nama_produk" id="nama_produk">
+            <option>Produk 1</option>
+            <option>Produk 2</option>
+            <option>Produk 3</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
+class SelectPromosi extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for="nama_promosi">Pilih Promosi</Label>
+            <Input type="select" name="nama_promosi" id="nama_promosi">
+            <option>Promosi 1</option>
+            <option>Promosi 2</option>
+            <option>Promosi 3</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
 
-
-export {SelectAll, SelectDistributor, SelectKategori,SelectRetail,SelectSubKategori,SelectSubSubKategori, SelectBrand, SelectSatuan,SelectKelasPasaran};
+export {SelectAll, SelectDistributor, SelectKategori,SelectRetail,SelectSubKategori,SelectSubSubKategori, SelectBrand, SelectSatuan,SelectKelasPasaran, SelectPromosi,SelectProduk};

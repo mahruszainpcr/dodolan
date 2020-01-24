@@ -18,6 +18,8 @@ class InputPromosi extends Component {
                       <SelectDistributor/>
                       <InputText id="nama_promosi" name="Nama Promosi"/>
                       <InputTextArea id="keterangan" name="Keterangan"/>
+                    <InputDateRange id="tanggal" nama="Rentang Tanggal Promosi"/>
+                    <input type="hidden" value="1" name="status"/>
 
                   </div>
               </CardBody>
@@ -31,12 +33,28 @@ class InputNum extends Component {
     render() {
     return (
     <FormGroup>
-    
-        <input type="number" name={this.props.name} placeholder="ex.1212" className="form-control" />
+    <Label for={this.props.name}>{this.props.nama}</Label>
+        <input type="number" id={this.props.name} name={this.props.name} placeholder="ex.1212" className="form-control" />
     </FormGroup>
     );
     }
     }
+  
+    
+    class InputDateRange extends Component {
+        state = { }
+        render()
+        
+        {
+        // const props = this.props;
+        return (
+        <FormGroup>
+            <Label for={this.props.id}>{this.props.nama}</Label>
+            <input type="text" name="daterange" className="form-control" placeholder="Klik kolom ini"/>
+        </FormGroup>
+        );
+        }
+        }
     
     class InputText extends Component {
     state = { }

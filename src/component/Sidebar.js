@@ -30,12 +30,27 @@ function Sidebar()  {
         <span className="pcoded-mtext">Promosi</span>
       </a>
       <ul class="pcoded-submenu">
-                                            <li class="">
-                                                <a href="inputpromosi">
-                                                    <span class="pcoded-mtext">Input Promosi</span>
-                                                </a>
-                                            </li>
-                                        </ul>
+           <li class="">
+              <a href="inputpromosi">
+              <span class="pcoded-mtext">Input Promosi</span>
+              </a>
+           </li>
+           <li class="">
+              <a href="inputpromosikhusus">
+              <span class="pcoded-mtext">Input Promosi Khusus</span>
+              </a>
+           </li>
+           <li class="">
+              <a href="inputpromosiproduk">
+              <span class="pcoded-mtext">Input Promosi Produk</span>
+              </a>
+           </li>
+           <li class="">
+              <a href="inputpromosiprodukbonus">
+              <span class="pcoded-mtext">Input Promosi Produk Bonus</span>
+              </a>
+           </li>
+       </ul>
     </li>
             
      
