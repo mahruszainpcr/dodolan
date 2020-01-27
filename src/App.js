@@ -37,6 +37,7 @@ import DetailProduk from './page/Retail/DetailProduk';
 // Tim Lapangan
 import Blacklist from './page/TimLapangan/Blacklist'
 
+require('dotenv').config();
 
 function App() {
   return (

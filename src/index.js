@@ -7,6 +7,7 @@ import Sidebar from './component/Sidebar';
 // import Loading from './component/Loading';
 import * as serviceWorker from './serviceWorker';
 
+require('dotenv').config();
 ReactDOM.render( < Header / > , document.getElementById('header'));
 ReactDOM.render( < Sidebar / > , document.getElementById('sidebar'));
 ReactDOM.render( < App / > , document.getElementById('root'));

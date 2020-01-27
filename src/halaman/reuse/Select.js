@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Card, CardBody,Form, FormGroup, CardFooter, Label, Input, CardHeader, CardText, Button} from 'reactstrap'
 
 
+var alamat_backend=require('./../../component/Variable');
 class SelectAll extends Component {
     state = {  }
     render() { 
@@ -43,15 +44,36 @@ class SelectRetail extends Component {
     }
 }
 class SelectKategori extends Component {
-    state = {  }
+    constructor(props) {
+        super(props)
+        this.state = {
+            dataKategori: []
+        }
+    }
+    
+    componentDidMount() {
+        let self = this;
+        fetch(alamat_backend+'kategori_produk', {
+            method: 'GET'
+        }).then(function(response) {
+            if (response.status >= 400) {
+                throw new Error("Bad response from server");
+            }
+            return response.json();
+        }).then(function(data) {
+            self.setState({dataKategori: data.values});
+        }).catch(err => {
+        console.log('caught it!',err);
+        })
+    }
     render() { 
         return ( 
             <FormGroup>
             <Label for="nama_kategori">Pilih Kategori</Label>
-            <Input type="select" name="nama_kategori" id="nama_kategori">
-            <option>Kategori 1</option>
-            <option>Kategori 2</option>
-            <option>Kategori 3</option>
+            <Input type="select" name="id_produk_kategori" id="id_produk_kategori">
+            {this.state.dataKategori.map(member =>
+            <option value={member.id_produk_kategori}>{member.nama_produk_kategori}</option>
+            )}
             </Input>
         </FormGroup>
          );
