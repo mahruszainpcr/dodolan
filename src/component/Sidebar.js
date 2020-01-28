@@ -53,7 +53,7 @@ function Sidebar()  {
        </ul>
     </li>
             
-     
+    <SubMenu tujuan="table_list" nama="Table List"/>
             </ul>
             </li>
             {/* produk */}

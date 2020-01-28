@@ -18,6 +18,7 @@ import Profil from './halaman/Distributor/Profil';
 import InputBlacklist from './halaman/Blacklist/Input'
 // Admin
 import Utilitas from './halaman/Admin/Form'
+import Table_list from './halaman/Admin/Table_list'
 // Promosi
 import InputPromosi from './halaman/Promosi/Input'
 import InputPromosiKhusus from './halaman/Promosi/InputKhusus'
@@ -54,6 +55,7 @@ function App() {
         <Route path="/InputPromosiProduk" component={InputPromosiProduk} />
         <Route path="/InputPromosiProdukBonus" component={InputPromosiProdukBonus}/>
         <Route path="/Utilitas" component={Utilitas} />
+        <Route path="/Table_list" component={Table_list} />
         <Route path="/Profil" component={Profil} />
         <Route path="/ProductDetail" component={ProductDetail} />
         <Route path="/ProductDetail/:id" component={ProductDetail} />
