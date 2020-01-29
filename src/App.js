@@ -17,7 +17,7 @@ import Profil from './halaman/Distributor/Profil';
 // Blacklist
 import InputBlacklist from './halaman/Blacklist/Input'
 // Admin
-import Utilitas from './halaman/Admin/Form'
+import Utilitas from './halaman/Admin/Utilitas'
 import Table_list from './halaman/Admin/Table_list'
 // Promosi
 import InputPromosi from './halaman/Promosi/Input'
