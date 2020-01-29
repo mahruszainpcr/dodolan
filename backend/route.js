@@ -5,6 +5,9 @@ module.exports = function(app) {
     var kualitas_pasaran = require('./controller/KualitasPasaran');
     var produk_satuan = require('./controller/ProdukSatuan');
     var kategori_produk = require('./controller/KategoriProduk');
+    var produk_sub_kategori = require('./controller/SubKategoriProduk');
+    var distributor = require('./controller/Distributor');
+    var produk = require('./controller/Produk');
 
     //---------------------- Brand ----------------------    
     app.route('/api/brand')
@@ -48,4 +51,38 @@ module.exports = function(app) {
         .put(kategori_produk.updateKategoriProduk);
     app.route('/api/kategori_produk')
         .delete(kategori_produk.deleteKategoriProduk);
+
+        //----------------------Sub Kategori Produk -----------------------
+
+    app.route('/api/produk_sub_kategori')
+        .get(produk_sub_kategori.getSubKategoriProduk);
+    app.route('/api/produk_sub_kategori')
+        .post(produk_sub_kategori.createSubKategoriProduk);
+    app.route('/api/produk_sub_kategori')
+        .put(produk_sub_kategori.updateSubKategoriProduk);
+    app.route('/api/produk_sub_kategori')
+        .delete(produk_sub_kategori.deleteSubKategoriProduk);
+        app.route("/api/upload").post(kategori_produk.upload);
+
+       //----------------------Distributor -----------------------
+
+    app.route('/api/distributor')
+        .get(distributor.getDistributor);
+    app.route('/api/distributor')
+        .post(distributor.createDistributor);
+    app.route('/api/distributor')
+        .put(distributor.updateDistributor);
+    app.route('/api/distributor')
+        .delete(distributor.deleteDistributor);
+
+        //---------------------- Produk -----------------------
+
+    app.route('/api/produk')
+        .get(produk.getProduk);
+    app.route('/api/produk')
+        .post(produk.createProduk);
+    app.route('/api/produk')
+        .put(produk.updateProduk);
+    app.route('/api/produk')
+        .delete(produk.deleteProduk);
 };

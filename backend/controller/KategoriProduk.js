@@ -72,7 +72,27 @@ exports.deleteKategoriProduk = function(req, res) {
     });
 };
 
+const path = require("path");
+const multer = require("multer");
 
-exports.index = function(req, res) {
-    response.ok("Hello from the Node JS RESTful side!", res)
+const storage = multer.diskStorage({
+    destination: "../public/uploads/",
+    filename: function(req, file, cb){
+       cb(null,"foto-produk-" + Date.now() + path.extname(file.originalname));
+    }
+ });
+ 
+ const upload = multer({
+    storage: storage,
+    limits:{fileSize: 1000000},
+ }).single("myImage");
+
+exports.upload = function(req, res) {
+    upload(req, res, (err) => {
+        console.log("Request ---", req.body);
+        console.log("Request file ---", req.file.filename);//Here you get file.
+        /*Now do where ever you want to do*/
+        if(!err)
+           return res.send(200).end();
+     });
 };

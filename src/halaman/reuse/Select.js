@@ -112,30 +112,72 @@ class SelectSubSubKategori extends Component {
 }
 
 class SelectBrand extends Component {
-    state = {  }
+    constructor(props) {
+        super(props)
+        this.state = {
+            dataBrand: []
+        }
+    }
+    
+    componentDidMount() {
+        let self = this;
+        fetch(alamat_backend+'brand', {
+            method: 'GET'
+        }).then(function(response) {
+            if (response.status >= 400) {
+                throw new Error("Bad response from server");
+            }
+            return response.json();
+        }).then(function(data) {
+            self.setState({dataBrand: data.values});
+        }).catch(err => {
+        console.log('caught it!',err);
+        })
+    }
     render() { 
         return ( 
             <FormGroup>
             <Label for="nama_brand">Pilih Brand</Label>
             <Input type="select" name="nama_brand" id="nama_brand">
-            <option>Brand 1</option>
-            <option>Brand 2</option>
-            <option>Brand 3</option>
+            {this.state.dataBrand.map(member =>
+            <option value={member.id_produk_brand}>{member.nama_produk_brand}</option>
+            )}
             </Input>
         </FormGroup>
          );
     }
 }
 class SelectSatuan extends Component {
-    state = {  }
+    constructor(props) {
+        super(props)
+        this.state = {
+            dataSatuan: []
+        }
+    }
+    
+    componentDidMount() {
+        let self = this;
+        fetch(alamat_backend+'produk_satuan', {
+            method: 'GET'
+        }).then(function(response) {
+            if (response.status >= 400) {
+                throw new Error("Bad response from server");
+            }
+            return response.json();
+        }).then(function(data) {
+            self.setState({dataSatuan: data.values});
+        }).catch(err => {
+        console.log('caught it!',err);
+        })
+    }
     render() { 
         return ( 
             <FormGroup>
             <Label for="nama_satuan">Pilih Satuan</Label>
             <Input type="select" name="nama_satuan" id="nama_satuan">
-            <option>Satuan 1</option>
-            <option>Satuan 2</option>
-            <option>Satuan 3</option>
+            {this.state.dataSatuan.map(member =>
+            <option value={member.id_produk_satuan}>{member.nama_produk_satuan}</option>
+            )}
             </Input>
         </FormGroup>
          );
