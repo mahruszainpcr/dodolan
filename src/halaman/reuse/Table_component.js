@@ -74,14 +74,17 @@ class Table_Distributor extends Component {
         return ( 
           <Card>
            <CardBody >
-           
+           <CardHeader>
+             <SubJudul name="Tabel Distributor"/>
+           </CardHeader>
             <DataTable
-            title="Tabel Distributor"
+            // title="Tabel Distributor"
           columns= {columns}
           data = {data}
           pagination
           paginationComponentOptions={paginationOptions}
           selectableRows
+          noHeader
           persistTableHead
         ></DataTable>
             </CardBody>
@@ -119,9 +122,11 @@ class Table_Pengajuan_Blacklist extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Pengajuan Blacklist"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Pengajuan Blacklist"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -169,9 +174,11 @@ class Table_Product extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Produk"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Product"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -244,9 +251,11 @@ class Table_Promosi extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Promosi"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Promosi"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -286,9 +295,11 @@ class Table_Kategori extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Kategori"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Kategori"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -334,9 +345,11 @@ class Table_Stock extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Stock"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Stock"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -385,9 +398,11 @@ class Table_Promosi_Khusus extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Promosi Khusus"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Promosi Khusus"
+         noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -431,9 +446,11 @@ class Table_Rating extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Rating"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Rating"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -506,9 +523,11 @@ class Table_Retail extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Retail"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Retail "
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -562,9 +581,11 @@ class Table_Retail_Alamat extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Retail Alamat"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Retail Alamat"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -610,9 +631,11 @@ class Table_Retur extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Retur"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Retur"
+         noHeader
         columns= {columns}
         data = {data}
         pagination
@@ -656,9 +679,11 @@ class Table_Retur_Produk extends Component {
       return ( 
         <Card>
          <CardBody >
-         
+         <CardHeader>
+           <SubJudul name="Tabel Retur Produk"/>
+         </CardHeader>
           <DataTable
-          title="Tabel Retur Produk"
+          noHeader
         columns= {columns}
         data = {data}
         pagination
