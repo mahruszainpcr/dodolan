@@ -696,5 +696,278 @@ class Table_Retur_Produk extends Component {
        );
   }
 }
+
+class Table_Brand extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Brand',
+        selector: 'nama_produk_brand',
+        sortable: true,
+      },
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Brand"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
+class Table_Kualitas_Pasaran extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Kualitas Pasaran',
+        selector: 'nama_kualitas_pasaran',
+        sortable: true,
+      },
+    
+      
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Kualitas Pasaran"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
  
-export {Table_Product, Table_Distributor, Table_Pengajuan_Blacklist,Table_Promosi,Table_Promosi_Khusus,Table_Rating,Table_Retail,Table_Retail_Alamat,Table_Retur,Table_Retur_Produk,Table_Stock};
+class Table_Satuan extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Satuan',
+        selector: 'nama_produk_satuan',
+        sortable: true,
+      },
+    
+      
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Satuan"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
+class Table_Ukuran extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Ukuran',
+        selector: 'nama_produk_ukuran',
+        sortable: true,
+      },
+    
+      
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Ukuran"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
+class Table_Warna extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Warna',
+        selector: 'nama_produk_warna',
+        sortable: true,
+      },
+    
+      
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Warna"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
+class Table_Kategori extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Kategori',
+        selector: 'nama_produk_kategori',
+        sortable: true,
+      },
+    
+      
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Kategori"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
+
+class Table_Sub_Kategori extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Sub Kategori',
+        selector: 'nama_produk_sub_kategori',
+        sortable: true,
+      },
+      {
+        name: 'Nama Kategori',
+        selector: 'id_kategori',
+        sortable: true,
+      },
+
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Sub Kategori"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
+
+class Table_Sub_Sub_Kategori extends Component {
+  state = {  }
+  render() {
+    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
+    const columns = [
+      {
+        name: 'Nama Sub Sub Kategori',
+        selector: 'nama_produk_sub_sub_kategori',
+        sortable: true,
+      },
+      {
+        name: 'Nama Kategori',
+        selector: 'id_produk_sub_kategori',
+        sortable: true,
+      },
+
+    ];
+      return ( 
+        <Card>
+         <CardBody >
+         <CardHeader>
+           <SubJudul name="Tabel Sub Sub Kategori"/>
+         </CardHeader>
+          <DataTable
+          noHeader
+        columns= {columns}
+        data = {data}
+        pagination
+        paginationComponentOptions={paginationOptions}
+        selectableRows
+        persistTableHead
+      ></DataTable>
+          </CardBody>
+        </Card>
+       );
+  }
+}
+export {Table_Product, Table_Distributor, Table_Pengajuan_Blacklist,Table_Promosi,Table_Promosi_Khusus,Table_Rating,Table_Retail,Table_Retail_Alamat,Table_Retur,Table_Retur_Produk,Table_Stock,Table_Satuan,Table_Kualitas_Pasaran, Table_Ukuran,Table_Warna,Table_Kategori,Table_Sub_Kategori,Table_Sub_Sub_Kategori,Table_Brand};

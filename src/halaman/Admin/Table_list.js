@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Table_Product, Table_Distributor, Table_Pengajuan_Blacklist,Table_Promosi,Table_Promosi_Khusus,Table_Rating,Table_Retail,Table_Retail_Alamat,Table_Retur,Table_Retur_Produk,Table_Stock} from '../reuse/Table_component'
+import {Table_Product, Table_Distributor, Table_Pengajuan_Blacklist,Table_Promosi,Table_Promosi_Khusus,Table_Rating,Table_Retail,Table_Retail_Alamat,Table_Retur,Table_Retur_Produk,Table_Stock,Table_Satuan,Table_Kualitas_Pasaran,Table_Brand,Table_Ukuran,Table_Warna,Table_Kategori,Table_Sub_Kategori,Table_Sub_Sub_Kategori} from '../reuse/Table_component'
 
 class Index extends Component {
     state = {  }
@@ -37,6 +37,39 @@ class Index extends Component {
                     </div>
                     <div className="col-4">
                         <Table_Retur_Produk/>
+                    </div>
+            </div>
+            <div className="row">
+                <div className="col-4">
+                    <Table_Kategori/>
+                    </div>  
+                    <div className="col-4">
+                        <Table_Sub_Kategori/>
+                    </div>
+                    <div className="col-4">
+                        <Table_Sub_Sub_Kategori/>
+                    </div>
+            </div>
+            <div className="row">
+                <div className="col-4">
+                    <Table_Ukuran/>
+                    </div>  
+                    <div className="col-4">
+                        <Table_Warna/>
+                    </div>
+                    <div className="col-4">
+                        <Table_Retur/>
+                    </div>
+            </div>
+            <div className="row">
+                <div className="col-4">
+                    <Table_Brand/>
+                    </div>  
+                    <div className="col-4">
+                        <Table_Satuan/>
+                    </div>
+                    <div className="col-4">
+                        <Table_Kualitas_Pasaran/>
                     </div>
             </div>
             <div className="row">
