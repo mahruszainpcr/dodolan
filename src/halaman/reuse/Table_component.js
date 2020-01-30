@@ -861,39 +861,6 @@ class Table_Warna extends Component {
        );
   }
 }
-class Table_Kategori extends Component {
-  state = {  }
-  render() {
-    const data = [{ id: 1, nama: 'Conan the Barbarian', no_ktp_distributor: '1982',no_hp_distributor:'0812116121' }];
-    const columns = [
-      {
-        name: 'Nama Kategori',
-        selector: 'nama_produk_kategori',
-        sortable: true,
-      },
-    
-      
-    ];
-      return ( 
-        <Card>
-         <CardBody >
-         <CardHeader>
-           <SubJudul name="Tabel Kategori"/>
-         </CardHeader>
-          <DataTable
-          noHeader
-        columns= {columns}
-        data = {data}
-        pagination
-        paginationComponentOptions={paginationOptions}
-        selectableRows
-        persistTableHead
-      ></DataTable>
-          </CardBody>
-        </Card>
-       );
-  }
-}
 
 class Table_Sub_Kategori extends Component {
   state = {  }
