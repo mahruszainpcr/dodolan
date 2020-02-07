@@ -6,33 +6,33 @@ import { CardHeader, CardBody, Card } from 'reactstrap';
 const paginationOptions = { rowsPerPageText: 'Tampilkan data per', rangeSeparatorText: 'dari' };
 
 
-class Table_component extends Component {
-    state = {  }
-    render() { 
-        const data = [{ id: 1, title: 'Conan the Barbarian', year: '1982' }];
-        const columns = [
-          {
-            name: 'Title',
-            selector: 'title',
-            sortable: true,
-          },
-          {
-            name: 'Year',
-            selector: 'year',
-            sortable: true,
-            right: true,
-          },
-        ];
-        return ( 
-            <DataTable
-            title="Arnold Movies"
-            columns= {columns}
-            data = {data}
-            
-          />
-         );
-    }
-}
+  class Table_component extends Component {
+      state = {  }
+      render() { 
+          const data = [{ id: 1, title: 'Conan the Barbarian', year: '1982' }];
+          const columns = [
+            {
+              name: 'Title',
+              selector: 'title',
+              sortable: true,
+            },
+            {
+              name: 'Year',
+              selector: 'year',
+              sortable: true,
+              right: true,
+            },
+          ];
+          return ( 
+              <DataTable
+              title="Arnold Movies"
+              columns= {columns}
+              data = {data}
+              
+            />
+          );
+      }
+  }
 
 class Table_Distributor extends Component {
     state = {  }

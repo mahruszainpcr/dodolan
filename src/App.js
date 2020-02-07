@@ -9,13 +9,16 @@ import Home from './page/Home';
 // {new}
 // Produk
 import InputProduk from './halaman/Produk/Input';
+import InputProdukJual from './halaman/Produk/InputJual';
 import Stock from './halaman/Distributor/Stock';
 import ProductDetail from './halaman/Produk/ProductDetail';
 // Distributor
 import InputDistributor from './halaman/Distributor/Input';
+import InputMaster from './halaman/Distributor/Master';
 import Profil from './halaman/Distributor/Profil';
 // Blacklist
 import InputBlacklist from './halaman/Blacklist/Input'
+import ViewBlacklist from './halaman/Blacklist/Blacklist_view'
 // Admin
 import Utilitas from './halaman/Admin/Utilitas'
 import Table_list from './halaman/Admin/Table_list'
@@ -24,6 +27,8 @@ import InputPromosi from './halaman/Promosi/Input'
 import InputPromosiKhusus from './halaman/Promosi/InputKhusus'
 import InputPromosiProduk from './halaman/Promosi/InputPromosiProduk'
 import InputPromosiProdukBonus from './halaman/Promosi/InputPromosiProdukBonus'
+// Invoice
+import Invoice from './halaman/Invoice/Index'
 // {end new}
 // Distributor
 import FormInputProduk from './page/Distributor/FormInputProduk';
@@ -48,8 +53,12 @@ function App() {
         <Route path="/" exact component={Dashboard} />
         <Route path="/home" component={Home} />
         <Route path="/InputProduk" component={InputProduk} />
+        <Route path="/InputProdukJual" component={InputProdukJual} />
         <Route path="/InputDistributor" component={InputDistributor} />
+        <Route path="/InputMaster" component={InputMaster} />
         <Route path="/InputBlacklist" component={InputBlacklist} />
+        <Route path="/ViewBlacklist" component={ViewBlacklist} />
+        <Route path="/Invoice" component={Invoice} />
         <Route path="/InputPromosi" component={InputPromosi} />
         <Route path="/InputPromosiKhusus" component={InputPromosiKhusus} />
         <Route path="/InputPromosiProduk" component={InputPromosiProduk} />

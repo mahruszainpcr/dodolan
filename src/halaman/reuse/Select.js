@@ -188,11 +188,11 @@ class SelectKelasPasaran extends Component {
     render() { 
         return ( 
             <FormGroup>
-            <Label for="nama_kelas_pasaran">Pilih Kelas Pasaran</Label>
-            <Input type="select" name="nama_kelas_pasaran" id="nama_kelas_pasaran">
-            <option>Kelas Pasaran 1</option>
-            <option>Kelas Pasaran 2</option>
-            <option>Kelas Pasaran 3</option>
+            <Label for="nama_segmentasi_pasaran">Pilih Segmentasi Pasar</Label>
+            <Input type="select" name="nama_segmentasi_pasaran" id="nama_segmentasi_pasaran">
+            <option>Segmentasi Pasar 1</option>
+            <option>Segmentasi Pasar 2</option>
+            <option>Segmentasi Pasar 3</option>
             </Input>
         </FormGroup>
          );
@@ -214,6 +214,38 @@ class SelectProduk extends Component {
          );
     }
 }
+class SelectProdukJual extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for="nama_produk_jual">Pilih Produk Jual</Label>
+            <Input type="select" name="nama_produk_jual" id="nama_produk_jual">
+            <option>Produk Jual 1</option>
+            <option>Produk Jual 2</option>
+            <option>Produk Jual 3</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
+
+class SelectTOP extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <FormGroup>
+            <Label for="top">Pilih TOP</Label>
+            <Input type="select" name="top" id="top">
+            <option>30 Hari</option>
+            <option>40 Hari</option>
+            <option>60 Hari</option>
+            <option>67 Hari</option>
+            </Input>
+        </FormGroup>
+         );
+    }
+}
 class SelectPromosi extends Component {
     state = {  }
     render() { 
@@ -230,4 +262,4 @@ class SelectPromosi extends Component {
     }
 }
 
-export {SelectAll, SelectDistributor, SelectKategori,SelectRetail,SelectSubKategori,SelectSubSubKategori, SelectBrand, SelectSatuan,SelectKelasPasaran, SelectPromosi,SelectProduk};
+export {SelectAll, SelectDistributor, SelectKategori,SelectRetail,SelectSubKategori,SelectSubSubKategori, SelectBrand, SelectSatuan,SelectKelasPasaran, SelectPromosi,SelectProduk,SelectProdukJual,SelectTOP};

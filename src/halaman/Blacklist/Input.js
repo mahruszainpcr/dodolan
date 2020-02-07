@@ -8,16 +8,16 @@ state = { }
 render() {
 return (
 <Container>
-    <Card className="p-5">
+    <Card className="">
         <CardTitle>
-            <SubJudul name="Form Pengajuan Judul"/>
+            <CardHeader>
+            <SubJudul name="Form Pengajuan Blacklist"/>
+            </CardHeader>
         </CardTitle>
         <CardBody>
             <div className="row">
                 <div className="col-12">
-
             <InputForm />
-               
                 </div>
             </div>
         </CardBody>

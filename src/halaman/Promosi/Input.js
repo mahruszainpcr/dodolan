@@ -17,6 +17,7 @@ class InputPromosi extends Component {
                   <div className="card-block">
                       <SelectDistributor/>
                       <InputText id="nama_promosi" name="Nama Promosi"/>
+                      <InputText id="kode_promosi" name="Kode Promosi"/>
                       <InputTextArea id="keterangan" name="Keterangan"/>
                     <InputDateRange id="tanggal" nama="Rentang Tanggal Promosi"/>
                     <input type="hidden" value="1" name="status"/>

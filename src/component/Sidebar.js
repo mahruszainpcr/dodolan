@@ -64,6 +64,7 @@ function Sidebar()  {
             </a>
             <ul className="pcoded-submenu">
             <SubMenu tujuan="inputproduk" nama="Input Produk"/>
+            <SubMenu tujuan="inputprodukjual" nama="Input Produk Jual"/>
             <SubMenu tujuan="stock" nama="Stock"/>
             <SubMenu tujuan="productdetail" nama="Product Detail"/>
             </ul>
@@ -76,7 +77,8 @@ function Sidebar()  {
             </a>
             <ul className="pcoded-submenu">
             <SubMenu tujuan="inputdistributor" nama="Input Distributor"/>
-            <SubMenu tujuan="listprodukdistributor" nama="List Produk"/>
+            <SubMenu tujuan="inputmaster" nama="Input Master"/>
+            <SubMenu tujuan="listproduk" nama="List Produk"/>
             <SubMenu tujuan="profil" nama="Profil"/>
             <SubMenu tujuan="penagihanretail" nama="Penagihan Retail"/>
             <SubMenu tujuan="inputblacklist" nama="Pengajuan Blacklist"/>
@@ -108,6 +110,18 @@ function Sidebar()  {
             </ul>
             </li>
             {/* end retail */}
+            {/* Start Invoice */}
+            <li className="pcoded-hasmenu">
+            <a href="javascript:void(0)">
+              <span className="pcoded-micon"><i className="feather icon-sidebar" /></span>
+              <span className="pcoded-mtext">Invoice</span>
+            </a>
+            <ul className="pcoded-submenu">
+            <SubMenu tujuan="invoice" nama="Cek Invoice"/>
+            <SubMenu tujuan="listproduk" nama="List Invoice"/>
+            </ul>
+            </li>
+            {/* end invoice */}
             {/* start Tim Lapangan */}
             <li className="pcoded-hasmenu">
             <a href="javascript:void(0)">
@@ -115,6 +129,7 @@ function Sidebar()  {
               <span className="pcoded-mtext">Kelola Tim Lapangan</span>
             </a>
             <ul className="pcoded-submenu">
+            <SubMenu tujuan="viewblacklist" nama="Lihat Blacklist"/>
             <SubMenu tujuan="blacklist" nama="Blacklist"/>
             </ul>
             </li>

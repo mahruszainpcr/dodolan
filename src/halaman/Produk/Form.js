@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Card, CardHeader, Form, FormGroup, Label, Input, FormText, Button, CardFooter } from 'reactstrap'
-import { SelectKelasPasaran, SelectKategori, SelectSubKategori, SelectSubSubKategori, SelectBrand, SelectSatuan } from '../reuse/Select'
+import { SelectKelasPasaran, SelectKategori, SelectSubKategori, SelectSubSubKategori, SelectBrand, SelectSatuan,SelectTOP } from '../reuse/Select'
 const axios = require("axios");
 var alamat_backend=require('./../../component/Variable');
 class InputForm extends Component {
@@ -8,24 +8,19 @@ class InputForm extends Component {
     render() {
         return (
             <Form>
-
                 <InputText id="nama_produk" name="Nama Produk" placeholder="Masukkan nama produk anda" />
                 <InputTextArea id="deskripsi_produk" name="Deskripsi Produk" placeholder="Masukkan deskripsi produk anda" />
-
-                <FormGroup>
-                    <div className="row">
-                        <div className="col-4">
-                            <InputNum id="harga_dalam_produk" name="Harga Dalam Kota" />
-                        </div>
-                        <div className="col-4">
-                            <InputNum id="harga_luar_produk" name="Harga Luar Kota" />
-                        </div>
-                        <div className="col-4">
-                            <InputNum id="harga_pulau_produk" name="Harga Luar Pulau" />
-                        </div>
+                <div className="row">
+                    <div className="col-4">
+                    <SelectKelasPasaran/>
                     </div>
-                </FormGroup>
-                <SelectKelasPasaran />
+                    <div className="col-4">
+                        <SelectBrand/>
+                    </div>
+                    <div className="col-4">
+                        <SelectTOP/>
+                    </div>
+                </div>
                 <FormGroup>
                     <div className="row">
                         <div className="col-4">
@@ -42,13 +37,7 @@ class InputForm extends Component {
                         </div>
                     </div>
                 </FormGroup>
-                <SelectBrand />
-                <SelectSatuan />
-
-                <FormGroup>
-                    <Label for="id_warna">Warna</Label>
-                    <input type="text" id="id_warna" className="form-control demo" defaultValue="#70c24a" />
-                </FormGroup>
+               
 
                 <CardFooter className="clearfix">
                     <input type="submit" value="simpan" className="btn btn-primary float-right" />
@@ -58,6 +47,51 @@ class InputForm extends Component {
         );
     }
 }
+class InputProdukJual extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <Form>
+            <InputText id="nama_produk" name="Nama Produk" placeholder="Masukkan nama produk anda" />
+            <InputTextArea id="deskripsi_produk" name="Deskripsi Produk" placeholder="Masukkan deskripsi produk anda" />
+            <div className="row">
+                <div className="col-4">
+                <SelectKelasPasaran/>
+                </div>
+                <div className="col-4">
+                    <SelectBrand/>
+                </div>
+                <div className="col-4">
+                    <SelectTOP/>
+                </div>
+            </div>
+            <FormGroup>
+                <div className="row">
+                    <div className="col-4">
+                        <SelectKategori />
+
+                    </div>
+                    <div className="col-4">
+                        <SelectSubKategori />
+
+                    </div>
+                    <div className="col-4">
+                        <SelectSubSubKategori />
+
+                    </div>
+                </div>
+            </FormGroup>
+           
+
+            <CardFooter className="clearfix">
+                <input type="submit" value="simpan" className="btn btn-primary float-right" />
+                <input type="submit" value="batal" className="btn btn-secondary mr-2 float-right" />
+            </CardFooter>
+        </Form>
+         );
+    }
+}
+ 
 
 class InputFormPhoto extends Component {
     
@@ -94,26 +128,12 @@ class InputFormPhoto extends Component {
             <h1>File Upload</h1>
             <input type="file" name="myImage" id="filer_input1" onChange= {this.onChange} />
             {/* <input type="file" name="myImage" onChange= {this.onChange}  /> */}
-            <button type="submit">Upload Foto</button>
+            <button className="btn btn-success float-right mr-2" type="submit">Upload Foto</button>
         </form>
         );
     }
 }
-class SelectProduct extends Component {
-    state = {}
-    render() {
-        return (
-            <FormGroup>
-                <Label for={this.props.id}>{this.props.name}</Label>
-                <Input type="select" name={this.props.id} id={this.props.id}>
-                    <option>Pilihan 1</option>
-                    <option>Pilihan 2</option>
-                    <option>Pilihan 3</option>
-                </Input>
-            </FormGroup>
-        );
-    }
-}
+
 
 class InputFormPhoto_KTP extends Component {
     state = {}
@@ -195,4 +215,4 @@ class InputSelect extends Component {
     }
 }
 
-export { InputForm, InputFormPhoto, SelectProduct };
+export { InputForm, InputFormPhoto };

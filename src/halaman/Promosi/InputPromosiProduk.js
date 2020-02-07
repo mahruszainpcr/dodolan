@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Card, CardBody,Form, FormGroup, CardFooter, Label, Input, CardHeader, CardText, Button} from 'reactstrap'
 import { SubJudul } from '../reuse/Typografi';
 import { SelectProduk,SelectPromosi } from '../reuse/Select';
+import { FormPromosi, FormBonus } from '../reuse/Form';
+import App from '../../App';
 
 
 class InputPromosiProduk extends Component {
@@ -14,10 +16,19 @@ class InputPromosiProduk extends Component {
               </CardHeader>
               <CardBody>
                   <div className="card-block">
-                  <SelectProduk/>
                   <SelectPromosi/>
-                <InputNum name="jumlah" nama="Jumlah"/>
+                
                   </div>
+                  <div className="row">
+                      <div className="col-md-6">
+                          <Appa/>
+                      </div>
+                      <div className="col-md-6">
+                          <Appb/>
+                      </div>
+                  </div>
+
+              
               </CardBody>
           </Card>
          );
@@ -34,5 +45,47 @@ class InputNum extends Component {
     );
     }
     }
+    
+    const {useState, useCallback, Fragment} = React
+
+// The added element component
+const AddedElement = () => <FormPromosi/>
+
+// The parent component
+const Appa = () => {
+  const [count, setCount] = useState(0) 
+
+  return <Fragment>
+    {/* <button onClick={() => setCount(count + 1)}>Click me</button> */}
+    <button onClick={() => setCount(count + 1)} class="btn btn-success btn-inline mb-3"><i class="icofont icofont-ui-add"></i>Tambah Produk</button>
+    { Array(count).fill(<AddedElement />) }
+  </Fragment>
+}
+
+const AddedElement2 = () => <FormBonus/>
+
+// The parent component
+const Appb = () => {
+  const [count, setCount] = useState(0) 
+
+  return <Fragment>
+    {/* <button onClick={() => setCount(count + 1)}>Click me</button> */}
+    <button onClick={() => setCount(count + 1)} class="btn btn-success btn-inline mb-3"><i class="icofont icofont-ui-add"></i>Tambah Bonus</button>
+    { Array(count).fill(<AddedElement2 />) }
+  </Fragment>
+}
+
+
+// class Input extends Component {
+//   state = { }
+//   render() {
+//   return (
+//   <div>
+//       <label> {this.props.label} </label>
+//       <input type={this.props.type} name={this.props.name} id={this.props.name} className="form-control form-control-capitalize" />
+//   </div>
+//   );
+//   }
+//   }
  
 export default InputPromosiProduk;

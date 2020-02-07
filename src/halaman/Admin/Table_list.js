@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import {Table_Product, Table_Distributor, Table_Pengajuan_Blacklist,Table_Promosi,Table_Promosi_Khusus,Table_Rating,Table_Retail,Table_Retail_Alamat,Table_Retur,Table_Retur_Produk,Table_Stock,Table_Satuan,Table_Kualitas_Pasaran,Table_Brand,Table_Ukuran,Table_Warna,Table_Kategori,Table_Sub_Kategori,Table_Sub_Sub_Kategori} from '../reuse/Table_component'
+import Kurva from '../reuse/Chart'
 
 class Index extends Component {
     state = {  }
     render() { 
         return ( 
             <div>
+                <div className="row">
+                    <div className="col-12">
+                        <Kurva/>
+                    </div>
+                </div>
                 <div className="row">
                 <div className="col-6">
                 <Table_Pengajuan_Blacklist/>

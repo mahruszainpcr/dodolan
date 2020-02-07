@@ -75,6 +75,7 @@ class Uti_Brand extends Component {
                                             <Label for="nama_produk_brand">Nama Brand Produk</Label>
                                             <input type="text" value={this.state.nama_produk_brand} onChange={this.handleChange} name="nama_produk_brand" className="form-control form-control-capitalize"/>
                                             </FormGroup>
+                                            <SelectSubSubKategori/>
                                             </div>
                                         </div>
                                     </div>
@@ -227,7 +228,7 @@ class Uti_Satuan_Produk extends Component {
     render() { 
         return ( 
             <Card>
-            <CardHeader><SubJudul name="Satuan" />
+            <CardHeader><SubJudul name="Ukuran" />
             </CardHeader>
             <CardBody className="card-block">
                 <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Satuan terbaru</CardText>
@@ -243,6 +244,88 @@ class Uti_Satuan_Produk extends Component {
                                     <Label for="nama_produk_brand">Nama Satuan</Label>
                                     
                                     <input type="text" value={this.state.nama_produk_satuan} onChange={this.handleChange} name="nama_produk_satuan" className="form-control form-control-capitalize"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <CardFooter className="clearfix">
+                    <input type="submit" value="simpan" onClick={this.handleSubmitSatuanProduk}  className="btn btn-primary float-right" />
+                    <input type="submit" value="batal" className="btn btn-secondary mr-2 float-right" />
+                </CardFooter>
+            </CardBody>
+        </Card>
+         );
+    }
+}
+
+class Uti_Warna extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            nama_produk_warna: ''};
+
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(e) {
+        this.setState({[e.target.name]: e.target.value});  }
+        
+        handleSubmitSatuanProduk = () =>{
+            axios.post(alamat_backend+'produk_warna', {
+                nama_produk_warna: this.state.nama_produk_warna
+              })
+              .then(function (response) {
+                if (response.data.status === 200) {
+                    swal.fire({
+                        icon: 'success',
+                        title: 'Data Tersimpan',
+                        showConfirmButton: false,
+                        timer: 1500
+                      }
+                      )
+                }else{
+                    swal.fire({
+                        icon: 'error',
+                        title: 'Data Tidak Tersimpan',
+                        showConfirmButton: false,
+                        timer: 1500
+                      }
+                      )
+                } 
+              })
+              .catch(function (error) {
+                console.log(error);
+                swal.fire({
+                    icon: 'error',
+                    title: 'Data Tidak Tersimpan',
+                    showConfirmButton: false,
+                    timer: 1500
+                  }
+                  )
+              });
+        }
+    
+    
+    render() { 
+        return ( 
+            <Card>
+            <CardHeader><SubJudul name="Warna" />
+            </CardHeader>
+            <CardBody className="card-block">
+                <CardText className="text-muted">Fitur ini disediakan untuk menambahkan Warna terbaru</CardText>
+
+                <div className="clone-link mt-2">
+                    <div className="toclone">
+                        <button className=" delete  btn btn-danger m-b-15"><i
+                            class="icofont icofont-minus"></i></button>
+                        <button className=" clone btn btn-primary m-b-15"><i class="icofont icofont-plus"></i></button>
+                        <div className="j-row">
+                            <div className="span6 unit">
+                                <div className="input">
+                                    <Label for="nama_produk_brand">Nama Warna</Label>
+                                    
+                                    <input type="text" value={this.state.nama_produk_warna} onChange={this.handleChange} name="nama_produk_warna" className="form-control form-control-capitalize"/>
                                 </div>
                             </div>
                         </div>
@@ -475,4 +558,4 @@ class InputTextArea extends Component {
 
 
 
-export {Utilitas,Uti_Brand,Uti_Kualitas_Pasaran,Uti_Kategori_Produk,Uti_Satuan_Produk,Uti_Sub_Kategori_Produk,Uti_Sub_Sub_Kategori_Produk};
+export {Utilitas,Uti_Brand,Uti_Kualitas_Pasaran,Uti_Kategori_Produk,Uti_Satuan_Produk,Uti_Sub_Kategori_Produk,Uti_Sub_Sub_Kategori_Produk,Uti_Warna};
