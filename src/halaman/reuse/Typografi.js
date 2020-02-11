@@ -29,5 +29,18 @@ class SubJudul extends Component {
     }
 }
 
+class SubJudul2 extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <div>
+            <h3 className="sub-title">{this.props.name}</h3>
+            <div className="card-header-right">
+                   
+                    </div></div>
+         );
+    }
+}
+
          
-export {Typografi,SubJudul};
+export {Typografi,SubJudul,SubJudul2};

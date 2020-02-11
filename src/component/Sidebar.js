@@ -66,6 +66,7 @@ function Sidebar()  {
             <SubMenu tujuan="inputproduk" nama="Input Produk"/>
             <SubMenu tujuan="inputprodukjual" nama="Input Produk Jual"/>
             <SubMenu tujuan="stock" nama="Stock"/>
+            <SubMenu tujuan="cart" nama="Cart"/>
             <SubMenu tujuan="productdetail" nama="Product Detail"/>
             </ul>
             </li>

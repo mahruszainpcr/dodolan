@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardHeader, CardBody } from 'reactstrap'
-import { SubJudul } from '../reuse/Typografi';
+import { SubJudul2 } from '../reuse/Typografi';
+import { ListCart } from '../reuse/ListView';
 
 class ProductCart extends Component {
     state = {  }
@@ -8,11 +9,37 @@ class ProductCart extends Component {
         return ( 
             <Card>
                 <CardHeader>
-                    <SubJudul name="Product Cart"/>
+                    {/* <SubJudul name="Product Cart"/> */}
                 </CardHeader>
                 <CardBody>
-                    <table className="table table-responsive table-striped dt-responsive nowrap dataTable no-footer dtr-inline cart-page">
-                        </table>
+                    <div className="row">
+                        <div className="col-8  p-2">
+                        <Card>
+                            <CardBody>
+                                <ul>
+                                    <li>
+                                        <ListCart/>
+                                    </li>
+                                </ul>
+                            </CardBody>
+                        </Card>
+                        </div>
+                        <div className="col-4  p-2">
+                        <Card className="p-2 ">
+                            {/* <h3 className="sub-title">Ringkasan Belanja</h3> */}
+              
+                            <SubJudul2 name="Ringkasan Belanja"/>
+
+                            <CardBody className="mt-0 pt-0">
+                            <div class="d-flex justify-content-between">
+  <div class="p-2">Total Harga</div>
+  <div class="p-2">Rp 20.000.000</div>
+</div>
+<button class="btn btn-success btn-square btn-block">Beli (3)</button>
+                            </CardBody>
+                        </Card>
+                        </div>
+                    </div>
                 </CardBody>
             </Card>
          );

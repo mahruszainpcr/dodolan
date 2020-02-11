@@ -12,6 +12,7 @@ import InputProduk from './halaman/Produk/Input';
 import InputProdukJual from './halaman/Produk/InputJual';
 import Stock from './halaman/Distributor/Stock';
 import ProductDetail from './halaman/Produk/ProductDetail';
+import Cart from './halaman/Produk/Cart';
 // Distributor
 import InputDistributor from './halaman/Distributor/Input';
 import InputMaster from './halaman/Distributor/Master';
@@ -66,6 +67,7 @@ function App() {
         <Route path="/Utilitas" component={Utilitas} />
         <Route path="/Table_list" component={Table_list} />
         <Route path="/Profil" component={Profil} />
+        <Route path="/Cart" component={Cart} />
         <Route path="/ProductDetail" component={ProductDetail} />
         <Route path="/ProductDetail/:id" component={ProductDetail} />
         <Route path="/FormInputProduk" component={FormInputProduk} />
