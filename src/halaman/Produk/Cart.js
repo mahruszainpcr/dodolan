@@ -16,7 +16,10 @@ class ProductCart extends Component {
                         <div className="col-8  p-2">
                         <Card>
                             <CardBody>
-                                <ul>
+                                <ul className="basic-list">
+                                    <li>
+                                        <ListCart/>
+                                    </li>
                                     <li>
                                         <ListCart/>
                                     </li>
