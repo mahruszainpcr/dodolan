@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardHeader, CardBody } from 'reactstrap'
-import { SubJudul2 } from '../reuse/Typografi';
+import { SubJudul2, SubJudul } from '../reuse/Typografi';
 import { ListCart } from '../reuse/ListView';
 
 class ProductCart extends Component {
@@ -9,7 +9,7 @@ class ProductCart extends Component {
         return ( 
             <Card>
                 <CardHeader>
-                    {/* <SubJudul name="Product Cart"/> */}
+                    <SubJudul name="Product Cart"/>
                 </CardHeader>
                 <CardBody>
                     <div className="row">
