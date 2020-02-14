@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-class Page extends Component {
+class PageJudul extends Component {
 render() {
 return (
 <div>
@@ -16,7 +16,7 @@ return (
       </div>
     </div>
     <div className="col-lg-4">
-      <div className="page-header-breadcrumb">
+      {/* <div className="page-header-breadcrumb">
         <ul className="breadcrumb-title">
           <li className="breadcrumb-item">
             <a href="index-1.htm">
@@ -31,7 +31,7 @@ return (
             <a href="#!">{this.props.subJudul}</a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   </div>
 </div>
@@ -121,4 +121,4 @@ class UserActivity extends Component {
     }
     } 
 
-    export{ Page, UserActivity}
+    export{ PageJudul, UserActivity}

@@ -16,10 +16,12 @@ import Cart from './halaman/Produk/Cart';
 // Distributor
 import InputDistributor from './halaman/Distributor/Input';
 import InputMaster from './halaman/Distributor/Master';
+import PenagihanRetail from './halaman/Distributor/PenagihanRetail';
 import Profil from './halaman/Distributor/Profil';
 // Blacklist
 import InputBlacklist from './halaman/Blacklist/Input'
 import ViewBlacklist from './halaman/Blacklist/Blacklist_view'
+// import Blacklist from './halaman/Blacklist/Blacklist'
 // Admin
 import Utilitas from './halaman/Admin/Utilitas'
 import Table_list from './halaman/Admin/Table_list'
@@ -35,14 +37,13 @@ import Invoice from './halaman/Invoice/Index'
 import FormInputProduk from './page/Distributor/FormInputProduk';
 import KelolaDataDistributor from './page/Distributor/KelolaDataDistributor';
 import ProdukDistributor from './page/Distributor/ProdukDistributor';
-import PenagihanRetail from './page/Distributor/PenagihanRetail';
 
 // Retail
 import KelolaDataRetail from './page/Retail/KelolaDataRetail';
 import ListProduk from './page/Retail/ListProduk';
 import DetailProduk from './page/Retail/DetailProduk';
 // Tim Lapangan
-import Blacklist from './page/TimLapangan/Blacklist'
+// import Blacklist from './page/TimLapangan/Blacklist'
 
 require('dotenv').config();
 
@@ -78,7 +79,7 @@ function App() {
         <Route path="/PenagihanRetail" component={PenagihanRetail} />
         <Route path="/ListProduk" component={ListProduk} />
         <Route path="/DetailProduk" component={DetailProduk} />
-        <Route path="/Blacklist" component={Blacklist} />
+        {/* <Route path="/Blacklist" component={Blacklist} /> */}
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

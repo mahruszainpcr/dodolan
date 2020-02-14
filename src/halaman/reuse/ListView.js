@@ -34,13 +34,13 @@ return (
             <div className="media-body">
                 <div className="col-xs-12">
                     <h4 className="d-inline-block">
-                        Multiroof Red 12A</h4>
-                    <label className="label label-info ml-2">Distributor 1</label>
+                        {this.props.nama_produk}</h4>
+                    <label className="label label-info ml-2">{this.props.nama_distributor}</label>
                 </div>
                 <div className="f-13 text-muted m-b-15">
-                    [sub sub kategori]
+                    {this.props.sub_sub_kategori}
                 </div>
-                <h6 className="text-success">Rp <span>135.000</span></h6>
+                <h6 className="text-success">Rp <span>{this.props.harga}</span></h6>
                 <div className="m-t-15">
                     <div class="d-flex justify-content-between align-items-center row">
                         <div class="p-2 col-6">
@@ -65,7 +65,7 @@ return (
                                     </div>
                                 </div>
                                 <h6>Jumlah</h6>
-                                <input type="number" className="form-control ml-2" defaultValue="15"
+                                <input type="number" name="jumlah_produk" className="form-control ml-2" defaultValue="15" min="1"
                                     style={{width:"60px"}} />
 
 

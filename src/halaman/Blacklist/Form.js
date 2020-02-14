@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import { Card, CardBody,Form, FormGroup, CardFooter, Label, Input } from 'reactstrap'
 import { SelectRetail } from '../reuse/Select';
+import {PageJudul} from '../reuse/Page'
 
 class InputForm extends Component {
     
     state = {  }
     render() { 
         return ( 
+            <div>
             <Form>
            <SelectRetail/>
             <InputTextArea id="alasan" name="Alasan" placeholder="Masukkan alasan anda terkait pengajuan blokir ini"/>
@@ -15,6 +17,7 @@ class InputForm extends Component {
                 <input type="submit" value="batal" className="btn btn-secondary mr-2 float-right"/>
             </CardFooter>
         </Form>
+            </div>
          );
     }
 }

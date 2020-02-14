@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import {FormStock} from '../reuse/Form'
 import { Card, CardHeader, CardBody} from 'reactstrap'
+import {PageJudul} from '../reuse/Page'
 
 export default class Stock extends Component {
     render(
@@ -8,10 +9,13 @@ export default class Stock extends Component {
     ) {
     
     return (
+        <div>
+  <PageJudul title="Form Penambahan Stock" deskripsiPage="Form yang dapat menambah stok barang anda dengan mudah dan praktis." />
+
         <Card>
-            <CardHeader>
+            {/* <CardHeader>
                 <h2 className="title">Form Penambahan Stock</h2>
-            </CardHeader>
+            </CardHeader> */}
             <CardBody>
             <div className="row container">
                                     <div className="col-md-4">
@@ -36,6 +40,7 @@ export default class Stock extends Component {
             </CardBody>
             
         </Card>
+        </div>
        
     )
     }

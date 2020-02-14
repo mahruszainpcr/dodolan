@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Card, CardHeader, CardBody } from 'reactstrap'
 import {} from './Form'
-import { SubJudul } from '../reuse/Typografi';
-import DataTable, {createTheme} from 'react-data-table-component';
+import { SubJudul2 } from '../reuse/Typografi';
+import DataTable, {} from 'react-data-table-component';
+import { PageJudul } from '../reuse/Page';
 
 const paginationOptions = { rowsPerPageText: 'Tampilkan data per', rangeSeparatorText: 'dari' };
 
@@ -25,16 +26,23 @@ render() {
     },
     ];
 return (
-    
+    <div>
+<PageJudul title="List Pengajuan Blacklist" deskripsiPage="Berisikan list data pengajuan blacklist dari Distributor"/>
 <Card>
-    <CardHeader>
-        <SubJudul name="List Blacklist" />
-    </CardHeader>
-    <CardBody>
-
-        <DataTable noHeader columns={columns} data={data} />
-    </CardBody>
-</Card>
+           <CardBody >
+           
+            <DataTable
+          columns= {columns}
+          data = {data}
+          pagination
+          paginationComponentOptions={paginationOptions}
+        //   selectableRows
+          noHeader
+          persistTableHead
+        ></DataTable>
+            </CardBody>
+          </Card>
+    </div>
 );
 }
 }

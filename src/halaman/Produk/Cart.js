@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 import { Card, CardHeader, CardBody } from 'reactstrap'
 import { SubJudul2, SubJudul } from '../reuse/Typografi';
 import { ListCart } from '../reuse/ListView';
+import {PageJudul} from '../reuse/Page';
 
 class ProductCart extends Component {
     state = {  }
     render() { 
         return ( 
-            <Card>
-                <CardHeader>
+          <div>
+              <PageJudul title="Keranjang Belanja" deskripsiPage="Anda dapat melakukan pembelian lebih dari 1 distributor dengan sekali pembayaran."/>
+                <Card>
+                {/* <CardHeader>
                     <SubJudul name="Product Cart"/>
-                </CardHeader>
+                </CardHeader> */}
                 <CardBody>
                     <div className="row">
                         <div className="col-8  p-2">
@@ -18,10 +21,10 @@ class ProductCart extends Component {
                             <CardBody>
                                 <ul className="basic-list">
                                     <li>
-                                        <ListCart/>
+                                        <ListCart nama_produk="Multi Roof" nama_distributor="Distributor 1" sub_sub_kategori="Atap Asbes" harga="35.000" />
                                     </li>
                                     <li>
-                                        <ListCart/>
+                                        <ListCart nama_produk="Multi Roof 2" nama_distributor="Distributor 1" sub_sub_kategori="Atap Seng" harga="70.000" />
                                     </li>
                                 </ul>
                             </CardBody>
@@ -45,6 +48,8 @@ class ProductCart extends Component {
                     </div>
                 </CardBody>
             </Card>
+          </div>
+
          );
     }
 }

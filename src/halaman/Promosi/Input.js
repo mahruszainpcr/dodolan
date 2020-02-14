@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { SubJudul } from '../reuse/Typografi';
 import { SelectDistributor } from '../reuse/Select';
-import { Card, CardBody,Form, FormGroup, CardFooter, Label, Input, CardHeader, CardText, Button} from 'reactstrap'
+import { Card, CardBody, FormGroup, Label,  CardHeader, } from 'reactstrap'
 
 
 class InputPromosi extends Component {
